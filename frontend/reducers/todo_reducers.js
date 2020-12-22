@@ -13,6 +13,9 @@ const todosReducer = (state = initialState, action) => {
             const newTodo = {[action.todo.id] : action.todo};
             return Object.assign({}, state, newTodo);
 
+        case REMOVE_TODO: 
+            newState.todos.delete(todo);
+            return newState;
         default:
             return state;
     }

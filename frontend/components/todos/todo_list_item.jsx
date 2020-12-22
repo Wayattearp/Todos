@@ -5,8 +5,14 @@ class TodoListItem extends React.Component {
         super(props)
     }
     render() {
-        const { title } = this.props.todo;
-        return <li> {title} </li>
+        const { title, body, done } = this.props.todo;
+        return <li>
+            {title}
+            <br/>
+            {body}
+            <br/>
+            {done}
+        </li>
     }
 }
 

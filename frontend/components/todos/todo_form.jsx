@@ -1,5 +1,5 @@
 import React from 'react';
-import uniqueId from '../../util/unique_id';
+import { uniqueId } from '../../util/unique_id';
 
 class TodoForm extends React.Component {
     constructor(props) {
@@ -28,20 +28,18 @@ class TodoForm extends React.Component {
 
     render() {
         return (
-            <div>
-                <form onSubmit={this.handleSave}>
-                    <label >Title:
+            <form onSubmit={this.handleSave}>
+                <label >Title:
                     <input placeholder="get it done" value={this.state.title}
-                            onChange={this.update('title')} required />
-                    </label>
+                        onChange={this.update('title')} required />
+                </label>
 
-                    <label >Body:
+                <label >Body:
                     <textarea placeholder="no excuses" value={this.state.body}
-                            onChange={this.update('body')} cols='20' rows='5' required />
-                    </label>
-                    <button> I will do! </button>
-                </form>
-            </div>
+                        onChange={this.update('body')} cols='20' rows='5' required />
+                </label>
+                <button> I will do! </button>
+            </form>
         )
     }
 }

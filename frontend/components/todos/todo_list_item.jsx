@@ -1,18 +1,25 @@
 import React from 'react';
+import TodoDetailViewContainer from './todo_detail_view_container';
 
 class TodoListItem extends React.Component {
     constructor(props) {
         super(props)
     }
+
     render() {
-        const { title, body, done } = this.props.todo;
-        return <li>
-            {title}
-            <br/>
-            {body}
-            <br/>
-            {done}
-        </li>
+        const todo = this.props.todo;
+        const { title, body, done } = todo;
+        return <div>
+            <li>
+                {title}
+                <br />
+                {body}
+                <br />
+                {done}
+            </li>
+            <TodoDetailViewContainer todo={todo} />
+
+        </div>
     }
 }
 

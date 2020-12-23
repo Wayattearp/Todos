@@ -12,7 +12,6 @@ class TodoDetailView extends React.Component {
         return (
             <div>
                 <div>{body} </div>
-                <div> {done} </div>
                 <button onClick={removeTodo}>Delete Todo</button>
             </div>
         );

@@ -21,14 +21,10 @@ class TodoListItem extends React.Component {
 
     render() {
         const todo = this.props.todo;
-        const { title, body, done } = todo;
+        const { title, done } = todo;
         return <div>
             <li>
                 {title}
-                <br />
-                {body}
-                <br />
-                {done}
             </li>
             <TodoDetailViewContainer todo={todo} />
             <button

@@ -4,3 +4,7 @@ export const allTodos = ({ todos }) =>
     )
 
 
+export const allSteps = ({ steps }) =>
+    Object.keys(steps).map(
+        id => steps[id]
+    )

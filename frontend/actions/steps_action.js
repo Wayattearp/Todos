@@ -9,11 +9,11 @@ export const receiveSteps = steps => ({
 
 export const receiveStep = step => ({
     type: RECEIVE_STEP,
-    steps
+    step
 });
 
 export const removeStep = step => ({
     type: REMOVE_STEP,
-    steps
+    step
 });
 

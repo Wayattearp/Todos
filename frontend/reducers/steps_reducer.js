@@ -1,6 +1,6 @@
 import { RECEIVE_STEPS, RECEIVE_STEP, REMOVE_STEP } from '../actions/steps_actions';
 
-const stepsReducer = (state = initialState, action) => {
+const stepsReducer = (state = {}, action) => {
     Object.freeze(state);
     const newState = Object.assign({}, state);
     switch (action.type) {

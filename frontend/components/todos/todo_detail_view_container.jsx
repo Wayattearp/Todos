@@ -1,12 +1,14 @@
 import { connect } from 'react-redux';
 import TodoDetailView from './todo_detail_view';
 import { removeTodo } from '../../actions/todo_actions';
+import { receiveSteps } from '../../actions/steps_actions';
 
 const mapDispatchToProps = (dispatch, { todo }) => ({
-    removeTodo: () => dispatch(removeTodo(todo))
+    removeTodo: () => dispatch(removeTodo(todo)),
+    receiveSteps: () => dispatch(receiveSteps)
 });
 
 export default connect(
-    null, // todo props is already passed in (the first argument to connect must always be mapStateToProps)
+    null, //(the first argument to connect must always be mapStateToProps)
     mapDispatchToProps
 )(TodoDetailView);

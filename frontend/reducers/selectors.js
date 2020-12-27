@@ -1,4 +1,3 @@
-import { bindActionCreators } from "redux";
 
 export const allTodos = ({ todos }) =>
     Object.keys(todos).map(

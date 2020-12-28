@@ -7,9 +7,11 @@ const StepList = ({ steps, todo_id, receiveStep }) => {
             key={step.id}
             step={step} />
     ));
+
     return (
         <div>
-            <ul> {stepItems} steps</ul>
+            <ul> {stepItems}</ul>
+            <div>stepForm</div>
         </div>
     )
 }

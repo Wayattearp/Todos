@@ -9,7 +9,6 @@ class TodoDetailView extends React.Component {
     render() {
         const { removeTodo, todo } = this.props;
         // const { body } = this.props.todo;
-
         return (
             <div>
                 {/* <div>{body} </div> */}

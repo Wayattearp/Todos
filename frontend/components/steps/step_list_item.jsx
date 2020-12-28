@@ -1,18 +1,21 @@
 import React from 'react'
 
-class StepItem extends React.Component {
+class StepListItem extends React.Component {
     constructor(props) {
         super(props);
     }
 
-
     render() {
+        const step = this.props.step;
+        const { title, body } = step;
         return (
             <div>
-                stepInfo
+                {title}
+                <br/>
+                {body}
             </div>
         )
     }
 }
 
-export default StepItem;
+export default StepListItem;

@@ -5,12 +5,12 @@ export const allTodos = ({ todos }) =>
     )
 
 
-export const stepsByTodoId = ({steps}, todoID) => {
+export const stepsByTodoId = ({steps}, todoId) => {
     const result = [];
     Object.keys(steps).forEach(
         stepId => {
             const step = steps[stepId];
-            if (steps[stepId].todoID === todoID)
+            if (steps[stepId].todo_id === todoId)
             result.push(step);
         })
         return result;

@@ -23,22 +23,20 @@ const stepsReducer = (state = initialState, action) => {
 
 const initialState =  {
   1: {
+    id: 48,
     title: "walk to store",
     done: false,
     todo_id: 1
   },
   2: {
+    id: 348,
     title: "buy soap",
     done: false,
     todo_id: 1
   },
-  3: {
-    title: "walk to park",
-    done: false,
-    todo_id: 3
-  },
   4: {
-    title: "play with dog",
+    id: 148,
+    title: "buy the dog",
     done: false,
     todo_id: 2
   }

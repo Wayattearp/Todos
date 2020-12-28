@@ -1,6 +1,6 @@
 import { RECEIVE_STEPS, RECEIVE_STEP, REMOVE_STEP } from '../actions/steps_actions';
 
-const stepsReducer = (state = {}, action) => {
+const stepsReducer = (state = initialState, action) => {
     Object.freeze(state);
     const newState = Object.assign({}, state);
     switch (action.type) {
@@ -19,6 +19,29 @@ const stepsReducer = (state = {}, action) => {
         default:
             return state;
     }
+};
+
+const initialState =  {
+  1: {
+    title: "walk to store",
+    done: false,
+    todo_id: 1
+  },
+  2: {
+    title: "buy soap",
+    done: false,
+    todo_id: 1
+  },
+  3: {
+    title: "walk to park",
+    done: false,
+    todo_id: 3
+  },
+  4: {
+    title: "play with dog",
+    done: false,
+    todo_id: 2
+  }
 };
 
 

@@ -12,8 +12,9 @@ const StepList = ({ steps, todo_id, receiveStep }) => {
     return (
         <div>
             <ul> {stepItems}</ul>
-            <div todo_id={todo_id}>
+            <div >
                 <StepForm
+                    todo_id={todo_id}
                     receiveStep={receiveStep}
                 /></div>
         </div>

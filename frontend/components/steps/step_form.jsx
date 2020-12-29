@@ -35,7 +35,7 @@ class StepForm extends React.Component {
                     <input placeholder="step 1 is..." value={this.state.title}
                         onChange={this.update('title')} required />
                 </label>
-                <label >Body:
+                <label >Description:
                     <textarea placeholder="getting done" value={this.state.body}
                         onChange={this.update('body')} cols='20' rows='5' required />
                 </label>

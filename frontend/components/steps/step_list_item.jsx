@@ -4,7 +4,7 @@ class StepListItem extends React.Component {
     constructor(props) {
         super(props);
         this.toggleStep = this.toggleStep.bind(this)
-        
+
     }
 
 
@@ -13,7 +13,7 @@ class StepListItem extends React.Component {
         const toggledStep = Object.assign(
             {},
             this.props.step,
-            {done: !this.props.step.done}
+            { done: !this.props.step.done }
         );
         this.props.receiveStep(toggledStep);
     }
@@ -25,10 +25,14 @@ class StepListItem extends React.Component {
         return (
             <div>
                 {title}
-                <br/>
+                <br />
                 {body}
                 <button
                     onClick={this.toggleStep}>{done ? 'Done' : 'Undo'}
+                </button>
+                <button
+                    onClick={this.props.removeStep}>
+                    Delete
                 </button>
             </div>
         )

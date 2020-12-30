@@ -17,9 +17,7 @@ class StepListItem extends React.Component {
         );
         this.props.receiveStep(toggledStep);
     }
-    //receive step adds new step to the state
-    // instead of replacing the existing one 
-    //need to refactor mapdispatchtoprops ?
+
 
     render() {
         const step = this.props.step;

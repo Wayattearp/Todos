@@ -8,31 +8,50 @@
     align-items: center;
     background-color: aliceblue;
     font-size: 22px;
+    border-radius: 10px;
     
 }
 
 .todoTitleBox{
     margin: 10px;
+    border-radius: 10px;
 }
 
 .textArea{
     font-size: 20px;
     border-radius: 10px;
     resize: none;
+    
+}
+.textArea:focus{
+     transition: 0.5s;
+     border-radius: 10px;
+     outline: none;
+     border: 1px solid gold;
 }
 
 .input{
     font-size: 22px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+input:focus{
+    transition: 0.5s;
+     border-radius: 10px;
+     outline: none;
+     border: 1px solid gold;
 }
 
 .button{
     font-size: 18px;
     padding: 4px 8px 4px 8px;
-    margin-bottom: 10px;
+    margin: 10px;
     border-radius: 10px;
+    border: 1px solid grey;
 }
 
 .button:hover{
     background-color: gold;
-    transition: 0.2s;
+    transition: 0.3s;
 }

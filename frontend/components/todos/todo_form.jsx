@@ -31,14 +31,18 @@ class TodoForm extends React.Component {
             <form
                 className="todoForm"
                 onSubmit={this.handleSave}>
-                <label >Title:
-                    <input placeholder="get it done" value={this.state.title}
+                <label className="todoTitleBox">Title:
+                    <input
+                        className="input"
+                        placeholder=" My Goal" value={this.state.title}
                         onChange={this.update('title')} required />
                 </label>
 
-                <label >Body:
-                    <textarea placeholder="no excuses" value={this.state.body}
-                        onChange={this.update('body')} cols='20' rows='5' required />
+                <label className="todoBodyBox">
+                    <textarea
+                        className="textArea"
+                        placeholder=" How am I going to achieve it...🤔" value={this.state.body}
+                        onChange={this.update('body')} cols='48' rows='6' required />
                 </label>
                 <button> I will do! </button>
             </form>

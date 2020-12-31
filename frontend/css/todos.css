@@ -7,4 +7,20 @@
     flex-direction: column;
     align-items: center;
     background-color: aliceblue;
+    font-size: 22px;
+    
+}
+
+.todoTitleBox{
+    margin: 10px;
+}
+
+.textArea{
+    font-size: 20px;
+    border-radius: 10px;
+    resize: none;
+}
+
+.input{
+    font-size: 22px;
 }

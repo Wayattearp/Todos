@@ -44,7 +44,9 @@ class TodoForm extends React.Component {
                         placeholder=" How am I going to achieve it...🤔" value={this.state.body}
                         onChange={this.update('body')} cols='48' rows='6' required />
                 </label>
-                <button> I will do! </button>
+                <button
+                className="button"
+                > I will do it! </button>
             </form>
         )
     }

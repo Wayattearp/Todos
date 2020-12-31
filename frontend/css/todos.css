@@ -24,3 +24,15 @@
 .input{
     font-size: 22px;
 }
+
+.button{
+    font-size: 18px;
+    padding: 4px 8px 4px 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.button:hover{
+    background-color: gold;
+    transition: 0.2s;
+}

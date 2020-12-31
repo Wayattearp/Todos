@@ -28,7 +28,9 @@ class TodoForm extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSave}>
+            <form
+                className="todoForm"
+                onSubmit={this.handleSave}>
                 <label >Title:
                     <input placeholder="get it done" value={this.state.title}
                         onChange={this.update('title')} required />

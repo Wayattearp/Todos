@@ -30,7 +30,7 @@ class StepForm extends React.Component {
 
     render() {
         return (
-            <form>
+            <form className="stepForm">
                 <label>Titile
                     <input placeholder="step 1 is..." value={this.state.title}
                         onChange={this.update('title')} required />

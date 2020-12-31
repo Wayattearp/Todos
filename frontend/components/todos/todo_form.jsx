@@ -34,15 +34,15 @@ class TodoForm extends React.Component {
                 <label className="todoTitleBox">Title:
                     <input
                         className="input"
-                        placeholder=" My Goal" value={this.state.title}
+                        placeholder="My Goal" value={this.state.title}
                         onChange={this.update('title')} required />
                 </label>
 
                 <label className="todoBodyBox">
                     <textarea
                         className="textArea"
-                        placeholder=" How am I going to achieve it...🤔" value={this.state.body}
-                        onChange={this.update('body')} cols='48' rows='6' required />
+                        placeholder="How am I going to achieve it...🤔" value={this.state.body}
+                        onChange={this.update('body')} cols='35' rows='6' required />
                 </label>
                 <button
                 className="button"

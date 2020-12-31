@@ -1,3 +1,23 @@
+/* 
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: sans-serif;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+  list-style: none;
+} */
+
 .stepForm {
     background: skyblue;
 }
@@ -13,11 +33,13 @@
 }
 
 .todoTitleBox{
+    padding: 10px;
     margin: 10px;
     border-radius: 10px;
 }
 
 .textArea{
+    padding: 7px;
     font-size: 20px;
     border-radius: 10px;
     resize: none;
@@ -27,10 +49,11 @@
      transition: 0.5s;
      border-radius: 10px;
      outline: none;
-     border: 1px solid gold;
+     border: 1px solid rgb(255, 252, 70);
 }
 
 .input{
+    padding: 7px;
     font-size: 22px;
     border-radius: 10px;
     border: 1px solid grey;

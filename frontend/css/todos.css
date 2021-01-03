@@ -23,12 +23,15 @@ span, article, footer, time, small {
 }
 
 .todoForm{
+     font-family: 'Caveat', cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: aliceblue;
-    font-size: 22px;
+    font-size: 30px;
     border-radius: 10px;
+    padding-bottom: 100%;
+
     
 }
 
@@ -39,42 +42,57 @@ span, article, footer, time, small {
 }
 
 .textArea{
-    padding: 7px;
-    font-size: 20px;
+    outline: none;
+    letter-spacing: 0.1em;
+    font-family: 'Caveat', cursive;
+    transition: 00.5s;
+    padding: 24px;
+    font-size: 30px;
     border-radius: 10px;
     resize: none;
-    
+    background-color: rgba(255, 217, 0, 0.157);
+    border: none;
 }
 .textArea:focus{
-     transition: 0.5s;
+    letter-spacing: 0.2em;
+     transition: 00.5s;
      border-radius: 10px;
      outline: none;
-     border: 1px solid rgb(255, 252, 70);
+     background-color: rgba(255, 217, 0, 0.157);
 }
 
 .input{
     padding: 7px;
-    font-size: 22px;
+    font-size: 38px;
     border-radius: 10px;
     border: 1px solid grey;
+    
 }
 
 input:focus{
-    transition: 0.5s;
+     transition: 0.5s;
      border-radius: 10px;
      outline: none;
-     border: 1px solid gold;
+     border: 1px solid rgba(223, 191, 7, 0.596);
+     background-image: linear-gradient(rgba(255, 217, 0, 0.055), rgba(255, 252, 70, 0.541));
 }
 
 .button{
-    font-size: 18px;
-    padding: 4px 8px 4px 8px;
-    margin: 10px;
-    border-radius: 10px;
-    border: 1px solid grey;
+    font-family: 'Caveat';
+    font-size: 36px;
+    padding: 12px;
+    border-radius: 148px;
+    border: none;
+    color: black;
+    background-color: transparent;
+    transition: 1s;
+    font-size: 26px;
 }
 
 .button:hover{
-    background-color: gold;
-    transition: 0.3s;
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    transition: 0.1s;
+    letter-spacing: 0.1em;
 }

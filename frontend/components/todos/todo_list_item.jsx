@@ -24,7 +24,7 @@ class TodoListItem extends React.Component {
     }
 
     handleDetail() {
-       this.setState({detail: !this.state.detail});
+        this.setState({ detail: !this.state.detail });
     }
 
     render() {
@@ -34,14 +34,17 @@ class TodoListItem extends React.Component {
         if (this.state.detail) {
             detail = <TodoDetailViewContainer todo={todo} />
         }
-        return <div>
-            <li onClick={this.handleDetail}>
+        return <div
+            className="todoItemContainer">
+            <li className="todoItem"
+                onClick={this.handleDetail}>
                 {title}
             </li>
             <div>
                 {detail}
             </div>
             <button
+                className="todoBotton"
                 onClick={this.toggleTodo}>{done ? 'Done' : 'Undo'}
             </button>
 

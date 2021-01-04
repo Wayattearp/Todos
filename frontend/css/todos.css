@@ -18,21 +18,16 @@ span, article, footer, time, small {
   list-style: none;
 } */
 
-.stepForm {
-    background: skyblue;
-}
 
 .todoForm{
-     font-family: 'Caveat', cursive;
+    font-family: 'Comfortaa', cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: aliceblue;
     font-size: 30px;
     border-radius: 10px;
-    padding-bottom: 100%;
-
-    
+    padding-bottom: 48px;
 }
 
 .todoTitleBox{
@@ -50,15 +45,15 @@ span, article, footer, time, small {
     font-size: 30px;
     border-radius: 10px;
     resize: none;
-    background-color: rgba(255, 217, 0, 0.157);
+    background-color:whitesmoke;
     border: none;
+    border: 1px solid grey;
 }
 .textArea:focus{
     letter-spacing: 0.2em;
-     transition: 00.5s;
-     border-radius: 10px;
-     outline: none;
-     background-color: rgba(255, 217, 0, 0.157);
+    transition: 00.5s;
+    border-radius: 10px;
+    outline: none;
 }
 
 .input{
@@ -70,11 +65,11 @@ span, article, footer, time, small {
 }
 
 input:focus{
-     transition: 0.5s;
-     border-radius: 10px;
-     outline: none;
-     border: 1px solid rgba(223, 191, 7, 0.459);
-     background-image: linear-gradient(rgba(255, 217, 0, 0.055), rgba(255, 252, 70, 0.541));
+    transition: 0.5s;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(223, 191, 7, 0.459);
+    background-image: linear-gradient(rgba(255, 217, 0, 0.055), rgba(255, 252, 70, 0.541));
 }
 
 .button{
@@ -102,24 +97,26 @@ input:focus{
 .todoList{
     list-style-type: none;
     background-color: aliceblue;
-    padding: 50px;
-    display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0;
 }
 
 .todoItem{
     margin: 4px;
     cursor: pointer;
-    padding: 24px;
+    padding: 25px;
     border-radius: 48px;
     font-size: 24px;
-    background-color: skyblue;
+    /* background: url('../assets/scaledCloud1.png') center no-repeat; */
+    background-color: white;
+    object-fit: cover;
+    align-self: center;
 }
 
 .todoBotton{
-    width: 50%;
+    font-size: 16px;
+    width: 90px;
     align-self: center;
     border-radius: 12px;
     border:none;
@@ -129,5 +126,43 @@ input:focus{
 .todoItemContainer{
     display: flex;
     justify-items: center;
+    flex-direction: column;
+
+}
+
+.auto-enter {
+    opacity: 0.01;
+    transform: translateY(250%);
+}
+
+.auto-enter.auto-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 3000ms, transform 3000ms;
+}
+
+.auto-leave {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.auto-leave.auto-leave-active {
+    opacity: 0.01;
+    transform: translateX(300%);
+    transition: opacity 500ms, transform 500ms;
+}
+
+/* STEPS  */
+
+
+.stepForm {
+    background: skyblue;
+    border-radius: 12px;
+}
+
+.todoView{
+    position: absolute;
+    display: flex;
+    justify-self: center;
     flex-direction: column;
 }

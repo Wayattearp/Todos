@@ -42,11 +42,11 @@ class TodoForm extends React.Component {
                     <textarea
                         className="textArea"
                         placeholder="How do I see it...🤔" value={this.state.body}
-                        onChange={this.update('body')} cols='60' rows='6' required />
+                        onChange={this.update('body')} cols='48' rows='6' required />
                 </label>
                 <button
                 className="button"
-                > Willing to do </button>
+                > Save </button>
             </form>
         )
     }

@@ -45,7 +45,7 @@ class TodoListItem extends React.Component {
             </div>
             <button
                 className="todoBotton"
-                onClick={this.toggleTodo}>{done ? 'Done' : 'Undo'}
+                onClick={this.toggleTodo}>{done ? 'Done' : 'In Progress'}
             </button>
 
         </div>

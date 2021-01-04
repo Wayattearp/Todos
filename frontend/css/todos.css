@@ -1,4 +1,4 @@
-/* 
+
 html, body, header, nav, h1, a,
 ul, li, strong, main, button, i,
 section, img, div, h2, p, form,
@@ -9,15 +9,15 @@ span, article, footer, time, small {
   border: 0;
   outline: 0;
   font: sans-serif;
-  color: inherit;
-  text-align: inherit;
   text-decoration: inherit;
   vertical-align: inherit;
   box-sizing: inherit;
-  background: transparent;
   list-style: none;
-} */
+}
 
+html{
+    background-color: aliceblue;
+}
 
 .todoForm{
     font-family: 'Comfortaa', cursive;
@@ -27,7 +27,6 @@ span, article, footer, time, small {
     background-color: aliceblue;
     font-size: 30px;
     border-radius: 10px;
-    padding-bottom: 48px;
 }
 
 .todoTitleBox{
@@ -74,14 +73,12 @@ input:focus{
 
 .button{
     font-family: 'Caveat';
-    font-size: 36px;
-    padding: 12px;
     border-radius: 148px;
     border: none;
     color: black;
     background-color: transparent;
     transition: 1s;
-    font-size: 26px;
+    font-size: 30px;
 }
 
 .button:hover{
@@ -97,36 +94,62 @@ input:focus{
 .todoList{
     list-style-type: none;
     background-color: aliceblue;
-    align-items: center;
-    flex-direction: row;
     margin: 0;
+    padding: 40px;
+}
+
+.todoList > span {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.todoItemContainer{
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
 }
 
 .todoItem{
-    margin: 4px;
+    margin: 20px;
     cursor: pointer;
     padding: 25px;
     border-radius: 48px;
-    font-size: 24px;
-    /* background: url('../assets/scaledCloud1.png') center no-repeat; */
-    background-color: white;
+    font-size: 30px;
+    /* background: url('../assets/scaledCloud1.png') center no-repeat;
     object-fit: cover;
+     */
     align-self: center;
+    background-color: white;
 }
 
-.todoBotton{
+.todoItem:hover{
+    transition: 0.5s;
+    transform: scale(1.4);
+}
+
+
+
+.todoButtonDone{
+    transition: 0.75s;
     font-size: 16px;
     width: 90px;
     align-self: center;
     border-radius: 12px;
     border:none;
     padding: 4px;
+    background-color: rgba(20, 218, 20, 0.486);
 }
 
-.todoItemContainer{
-    display: flex;
-    justify-items: center;
-    flex-direction: column;
+.todoButtonInProgress{
+     transition: 0.75s;
+    font-size: 16px;
+    width: 90px;
+    align-self: center;
+    border-radius: 12px;
+    border:none;
+    padding: 4px;
+    background-color: rgba(250, 229, 41, 0.486);
 
 }
 
@@ -138,7 +161,7 @@ input:focus{
 .auto-enter.auto-enter-active {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 3000ms, transform 3000ms;
+    transition: opacity 5000ms, transform 2000ms;
 }
 
 .auto-leave {

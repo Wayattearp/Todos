@@ -34,6 +34,7 @@ class TodoListItem extends React.Component {
         if (this.state.detail) {
             detail = <TodoDetailViewContainer todo={todo} />
         }
+
         return <div
             className="todoItemContainer">
             <li className="todoItem"
@@ -43,8 +44,7 @@ class TodoListItem extends React.Component {
             <div>
                 {detail}
             </div>
-            <button
-                className="todoBotton"
+            <button className={done ? "todoButtonDone" : "todoButtonInProgress"}
                 onClick={this.toggleTodo}>{done ? 'Done' : 'In Progress'}
             </button>
 

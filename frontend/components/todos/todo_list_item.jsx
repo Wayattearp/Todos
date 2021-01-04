@@ -38,11 +38,11 @@ class TodoListItem extends React.Component {
 
         let colors = ['e8efeb', 'adeecf', 'e8e8e4', 'ffd7ba', 'fae1dd', 'fdffb6', 'a9d6e5', 'fde2e4', 'e9edc9' ];
         let randomColor = colors[Math.floor(Math.random() * 9)];
-
         return <div
             className="todoItemContainer">
             <li className="todoItem"
-                style={{ background: '#' + randomColor }}
+                style={{ 
+                    background: '#' + randomColor}}
                 onClick={this.handleDetail}>
                 {title}
             </li>

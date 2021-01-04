@@ -45,7 +45,7 @@ class TodoForm extends React.Component {
                         onChange={this.update('body')} cols='48' rows='6' required />
                 </label>
                 <button
-                className="button"
+                    className="saveTodoButton"
                 > Save </button>
             </form>
         )

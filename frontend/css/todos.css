@@ -71,17 +71,19 @@ input:focus{
     background-image: linear-gradient(rgba(255, 217, 0, 0.055), rgba(255, 252, 70, 0.541));
 }
 
-.button{
-    font-family: 'Caveat';
-    border-radius: 148px;
+.saveTodoButton{
+    font-family: 'Caveat' ;
+    border-radius: 48px;
+    padding: 0.5% 1% 0.5% 1%;
     border: none;
-    color: black;
-    background-color: transparent;
+    color: #420a1e;
+    background-image: linear-gradient(to right, #fdffb6, #ffb908b9);
     transition: 1s;
     font-size: 30px;
+    border: 1px solid #fdffb6;
 }
 
-.button:hover{
+.saveTodoButton:hover{
     font-size: 40px;
     cursor: pointer;
     color: rgb(0, 0, 0);
@@ -111,6 +113,8 @@ input:focus{
 }
 
 .todoItem{
+    transition: 3s;
+    opacity: 85%;
     min-width: 50px;
     max-width: 250px;
     margin: 20px;
@@ -151,7 +155,7 @@ input:focus{
     border-radius: 12px;
     border:none;
     padding: 4px;
-    background-color: rgba(250, 229, 41, 0.486);
+    background-color: rgba(250, 201, 41, 0.486);
 
 }
 

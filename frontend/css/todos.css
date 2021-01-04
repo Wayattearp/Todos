@@ -60,6 +60,7 @@ html{
     font-size: 38px;
     border-radius: 10px;
     border: 1px solid grey;
+    background-color: whitesmoke;
     
 }
 
@@ -74,8 +75,8 @@ input:focus{
 .saveTodoButton{
     transition: 1s;
     font-family: 'Caveat' ;
-    border-radius: 30px;
-    padding: 0.5% 0.5% 0.5% 0.5%;
+    border-radius: 48px;
+    padding: 0.7%;
     border: none;
     color: #420a1e;
     background-color: #fde82a50 ;
@@ -128,12 +129,12 @@ input:focus{
     font-size: 30px;
     text-align: center;
     background-color: white;
-   box-shadow: 0px 0px 10px 6px white;
+   box-shadow: 0px 0px 20px 7px white;
 
 }
 
 .todoItem:hover{
-    transition: 0.5s;
+    transition: 0.3s;
     transform: scale(1.4);
     z-index: 100;
 }

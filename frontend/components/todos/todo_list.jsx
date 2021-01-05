@@ -7,9 +7,17 @@ class TodoList extends React.Component {
 
     render() {
         const { todos, receiveTodo } = this.props;
-        const todoItems = todos.map(todo =>
-            <TodoListItem key={todo.id} todo={todo} receiveTodo={receiveTodo}
-             />);
+        const doneTodoItems = [];
+        const InProgressTodoItems = [];
+        todos.map(todo => {
+            if (!todo.done)
+                doneTodoItems.push(<TodoListItem key={todo.id} todo={todo} receiveTodo={receiveTodo} />);
+            else {
+                InProgressTodoItems.push(<TodoListItem key={todo.id} todo={todo} receiveTodo={receiveTodo} />)
+            }
+        }
+
+        );
         return <div>
 
             <ol className="todoList">
@@ -17,11 +25,11 @@ class TodoList extends React.Component {
                     transitionName='auto'
                     transitionEnterTimeout={3000}
                     transitionLeaveTimeout={500}>
-                    {todoItems}
+                    {doneTodoItems}
                 </ReactCSSTransitionGroup>
             </ol>
             <TodoForm receiveTodo={receiveTodo} />
-
+            {InProgressTodoItems}
         </div>
     }
 }

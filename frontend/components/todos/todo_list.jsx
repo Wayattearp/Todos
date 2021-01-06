@@ -10,7 +10,7 @@ class TodoList extends React.Component {
         const doneTodoItems = [];
         const InProgressTodoItems = [];
         todos.map(todo => {
-            if (!todo.done)
+            if (todo.done)
                 doneTodoItems.push(<TodoListItem key={todo.id} todo={todo} receiveTodo={receiveTodo} />);
             else {
                 InProgressTodoItems.push(<TodoListItem key={todo.id} todo={todo} receiveTodo={receiveTodo} />)
@@ -25,11 +25,19 @@ class TodoList extends React.Component {
                     transitionName='auto'
                     transitionEnterTimeout={3000}
                     transitionLeaveTimeout={500}>
-                    {doneTodoItems}
+                    {InProgressTodoItems}
                 </ReactCSSTransitionGroup>
             </ol>
             <TodoForm receiveTodo={receiveTodo} />
-            {InProgressTodoItems}
+
+            <div className="todoList">
+                <ReactCSSTransitionGroup
+                    transitionName='auto'
+                    transitionEnterTimeout={3000}
+                    transitionLeaveTimeout={500}>
+                    {doneTodoItems}
+                </ReactCSSTransitionGroup>
+            </div>
         </div>
     }
 }

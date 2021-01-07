@@ -28,16 +28,17 @@ class TodoListItem extends React.Component {
     }
 
     render() {
+        let colors = ['e8efeb', 'adeecf', 'e8e8e4', 'ffd7ba', 'fae1dd', 'fdffb6', 'a9d6e5', 'fde2e4', 'e9edc9' ];
+        let randomColor = colors[Math.floor(Math.random() * 9)];
+
         const todo = this.props.todo;
         const { title, done } = todo;
         let detail;
 
         if (this.state.detail) {
-            detail = <TodoDetailViewContainer todo={todo} />
+            detail = <TodoDetailViewContainer todo={todo} color={randomColor} />
         }
 
-        let colors = ['e8efeb', 'adeecf', 'e8e8e4', 'ffd7ba', 'fae1dd', 'fdffb6', 'a9d6e5', 'fde2e4', 'e9edc9' ];
-        let randomColor = colors[Math.floor(Math.random() * 9)];
         return <div
             className="todoItemContainer">
             <li className="todoItem"

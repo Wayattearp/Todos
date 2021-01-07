@@ -31,13 +31,13 @@ class StepForm extends React.Component {
     render() {
         return (
             <form className="stepForm">
-                <label>Titile
+                <label>
                     <input placeholder="Next step is..." value={this.state.title}
                         onChange={this.update('title')} required />
                 </label>
-                <label >Description:
+                <label >
                     <textarea placeholder="Details" value={this.state.body}
-                        onChange={this.update('body')} cols='20' rows='5' required />
+                        onChange={this.update('body')} cols='40' rows='7' required />
                 </label>
                 <button onClick={this.handleSave}> Add Step </button>
             </form>

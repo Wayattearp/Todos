@@ -190,28 +190,29 @@ input:focus{
 
 
 .stepForm {
-    background: skyblue;
-    border-radius: 12px;
+    display: flex;
+    margin: 5%;
+    flex-direction: column;
+    align-items: center;
+    resize: none;
 }
 
-/* .todoViewHidden{
-    display: none;
-} */
-
 .todoView{
+  font-size: 20px;
   border-radius: 18px;
-  width: 75%;
-  height: 75%;
-  background-color: skyblue;
+  width: 60%;
+  height: 45%;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 50;
-    
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
 }
 
-/* .modalBackground {
+.StepsBackground {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -219,4 +220,26 @@ input:focus{
   left: 0;
   background: rgba(0, 0, 0, 0.7);
   z-index: 51;
-} */
+}
+
+.todoDetailVisible{
+    display: flex
+}
+
+.todoDetailHidden{
+    display: none;
+}
+
+.closeStepsButton{
+    cursor: pointer;
+    font-size: 40px;
+    background: transparent;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.closeStepsButton:hover{
+    opacity: 80%;
+    color: whitesmoke;
+}

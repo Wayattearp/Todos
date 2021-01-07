@@ -52,7 +52,6 @@ html{
 .textArea:focus{
     letter-spacing: 0.2em;
     transition: 00.5s;
-    border-radius: 10px;
     outline: none;
 }
 
@@ -73,7 +72,7 @@ input:focus{
     background-image: linear-gradient(rgba(255, 217, 0, 0.055), rgba(255, 252, 70, 0.541));
 }
 
-.saveTodoButton{
+.saveButton{
     font-family: 'Caveat' ;
     border-radius: 48px;
     padding: 0.7%;
@@ -84,7 +83,7 @@ input:focus{
     font-size: 30px;
 }
 
-.saveTodoButton:hover{
+.saveButton:hover{
     transition: 1s;
     cursor: pointer;
     transform: scale(1.1);
@@ -175,6 +174,9 @@ input:focus{
     border:none;
     padding: 4px;
     background-image: linear-gradient(to right, #fdffb6, rgb(243, 96, 76));
+    position: absolute;
+    width: 90%;
+    bottom: 3%;
 }
 
 .auto-enter {
@@ -222,6 +224,7 @@ input:focus{
   padding: 3%;
   display: flex;
   flex-direction: column;
+  background: rgb(255, 215, 186)
 }
 
 .StepsBackground {
@@ -254,4 +257,57 @@ input:focus{
 .closeStepsButton:hover{
     opacity: 80%;
     color: whitesmoke;
+}
+
+.inputStep{
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background-color: whitesmoke;
+    margin: 2%;
+}
+
+.textAreaStep{
+    outline: none;
+    font-family: 'Caveat', cursive;
+    transition: 00.5s;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 10px;
+    resize: none;
+    background-color: whitesmoke;
+    border: none;
+    border: 1px solid grey;
+    margin: 2%;
+}
+
+.textAreaStep:focus{
+    letter-spacing: 0.2em;
+    transition: 00.5s;
+    outline: none;
+}
+
+.saveStepButton{
+    font-family: 'Caveat' ;
+    border-radius: 48px;
+    padding: 0.7%;
+    border: none;
+    color: #6d082c;
+    background-color: #f5e665 ;
+    transition: 1s;
+    font-size: 18px;
+}
+
+.saveStepButton:hover{
+    transition: 1s;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: -7px 0px 8px #fdffb6;
+    background-image: linear-gradient(to right, #fdffb6, #fdc12ab9);
+
+}
+
+.stepsContainer{
+    max-width: 50%;
 }

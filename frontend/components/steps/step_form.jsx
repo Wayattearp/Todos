@@ -32,14 +32,22 @@ class StepForm extends React.Component {
         return (
             <form className="stepForm">
                 <label>
-                    <input placeholder="Next step is..." value={this.state.title}
+                    <input
+                        className="inputStep"
+                        placeholder="Next step is..."
+                        value={this.state.title}
                         onChange={this.update('title')} required />
                 </label>
                 <label >
-                    <textarea placeholder="Details" value={this.state.body}
-                        onChange={this.update('body')} cols='40' rows='7' required />
+                    <textarea
+                        className='textAreaStep'
+                        placeholder="Details"
+                        value={this.state.body}
+                        onChange={this.update('body')} cols='30' rows='3' required />
                 </label>
-                <button onClick={this.handleSave}> Add Step </button>
+                <button 
+                className="saveStepButton"
+                onClick={this.handleSave}> Add Step </button>
             </form>
         )
     }

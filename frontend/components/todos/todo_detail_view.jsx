@@ -23,7 +23,8 @@ class TodoDetailView extends React.Component {
             <div className={this.state.visible ? "todoDetailVisible" : "todoDetailHidden"}>
                 <div className="StepsBackground">
                     <div className="todoView"
-                        style={{ background: '#' + this.props.color }}>
+                        // style={{ background: '#' + this.props.color }}
+                        >
                         <button
                             className="closeStepsButton"
                             onClick={this.toggleStepsForm}>×</button>

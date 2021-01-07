@@ -23,7 +23,7 @@ class StepListItem extends React.Component {
         const step = this.props.step;
         const { title, body, done } = step;
         return (
-            <div>
+            <div className="stepsContainer">
                 {title}
                 <br />
                 {body}

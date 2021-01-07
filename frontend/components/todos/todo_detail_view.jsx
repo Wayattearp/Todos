@@ -23,15 +23,15 @@ class TodoDetailView extends React.Component {
             <div className={this.state.visible ? "todoDetailVisible" : "todoDetailHidden"}>
                 <div className="StepsBackground">
                     <div className="todoView"
-                        style={{background: '#' + this.props.color}}>
+                        style={{ background: '#' + this.props.color }}>
                         <button
                             className="closeStepsButton"
                             onClick={this.toggleStepsForm}>×</button>
                         <div className="todoBody">
                             {todo.body}
                         </div>
-                        <button onClick={removeTodo}>Delete Todo</button>
                         <StepListContainer todo_id={todo.id} />
+                        <button className="deleteTodoButton" onClick={removeTodo}>Delete Todo</button>
                     </div>
                 </div>
             </div>

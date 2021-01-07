@@ -164,6 +164,19 @@ input:focus{
 
 }
 
+.todoBody{
+    align-self: center;
+}
+
+.deleteTodoButton{
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    border:none;
+    padding: 4px;
+    background-image: linear-gradient(to right, #fdffb6, rgb(243, 96, 76));
+}
+
 .auto-enter {
     opacity: 0.01;
     transform: translateY(250%);
@@ -194,7 +207,6 @@ input:focus{
     margin: 5%;
     flex-direction: column;
     align-items: center;
-    resize: none;
 }
 
 .todoView{
@@ -207,7 +219,7 @@ input:focus{
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 50;
-  padding: 2%;
+  padding: 3%;
   display: flex;
   flex-direction: column;
 }

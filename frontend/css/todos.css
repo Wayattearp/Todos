@@ -134,7 +134,7 @@ input:focus{
 .todoItem:hover{
     transition: 0.3s;
     transform: scale(1.4);
-    z-index: 100;
+    z-index: 48;
 }
 
 
@@ -194,9 +194,29 @@ input:focus{
     border-radius: 12px;
 }
 
+/* .todoViewHidden{
+    display: none;
+} */
+
 .todoView{
-    position: absolute;
-    display: flex;
-    justify-self: center;
-    flex-direction: column;
+  border-radius: 18px;
+  width: 75%;
+  height: 75%;
+  background-color: skyblue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+    
 }
+
+/* .modalBackground {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 51;
+} */

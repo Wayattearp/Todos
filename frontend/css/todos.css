@@ -331,3 +331,29 @@ input:focus{
     margin: 1%;
     min-width: 150px;
 }
+
+.stepTitle{
+    margin: 3%;
+    background-color: rgb(232, 232, 228);
+}
+
+.stepBody{
+    margin: 5%;
+}
+
+.deleteStep{
+    cursor: pointer;
+    font-size: 14px;
+    background: transparent;
+    color: rgb(248, 171, 159);
+}
+
+.deleteStep:hover{
+        color: rgb(245, 88, 63);
+
+}
+
+.stepStatus{
+    padding: 5%;
+    border-radius: 8px;
+}

@@ -25,19 +25,22 @@ class StepListItem extends React.Component {
         return (
             <div className="stepItemContainer">
                 <div className="stepItem">
-                    {title}
-                    <br />
-                    {body}
-                    <button
+                    <button className="stepStatus"
                         onClick={this.toggleStep}>{done ? 'Done' : 'In Progress'}
                     </button>
-                    <button
+                    <div className="stepTitle">
+                        {title}
+                    </div>
+                    <div className="stepBody">
+                        {body}
+                    </div>
+                    <button className="deleteStep"
                         onClick={this.props.removeStep}>
                         Delete
                     </button>
+                </div>
             </div>
-            </div>
-            
+
         )
     }
 }

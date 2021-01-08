@@ -309,5 +309,9 @@ input:focus{
 }
 
 .stepsContainer{
-    max-width: 50%;
+    max-width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
 }

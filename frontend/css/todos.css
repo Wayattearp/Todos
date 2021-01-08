@@ -313,5 +313,21 @@ input:focus{
     overflow: auto;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: flex-start;
+}
+
+.stepItem{
+    overflow: auto;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.stepItemContainer{
+    background-color: whitesmoke;
+    border-radius: 8px;
+    margin: 1%;
+    min-width: 150px;
 }

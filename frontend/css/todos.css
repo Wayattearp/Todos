@@ -294,9 +294,9 @@ input:focus{
     padding: 0.7%;
     border: none;
     color: #6d082c;
-    background-color: #f5e665 ;
+    background-color: #f3e77d ;
     transition: 1s;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .saveStepButton:hover{
@@ -356,4 +356,5 @@ input:focus{
 .stepStatus{
     padding: 3%;
     border-radius: 8px;
+    cursor: pointer;
 }

@@ -318,7 +318,7 @@ input:focus{
 
 .stepItem{
     overflow: auto;
-    max-height: 200px;
+    max-height: 165px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -329,7 +329,7 @@ input:focus{
     background-color: whitesmoke;
     border-radius: 8px;
     margin: 1%;
-    min-width: 150px;
+    min-width: 31%;
 }
 
 .stepTitle{
@@ -354,6 +354,6 @@ input:focus{
 }
 
 .stepStatus{
-    padding: 5%;
+    padding: 3%;
     border-radius: 8px;
 }

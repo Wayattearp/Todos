@@ -214,8 +214,9 @@ input:focus{
 .todoView{
   font-size: 20px;
   border-radius: 18px;
-  width: 60%;
-  height: 45%;
+  max-width: 60%;
+  max-height: 60%;
+  min-width: 600px;
   position: absolute;
   top: 55%;
   left: 50%;
@@ -314,11 +315,14 @@ input:focus{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    margin: 3%;
+    
 }
 
 .stepItem{
+    border-radius: 8px;
     overflow: auto;
-    max-height: 165px;
+    height: 320px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -329,7 +333,7 @@ input:focus{
     background-color: whitesmoke;
     border-radius: 8px;
     margin: 1%;
-    min-width: 31%;
+    min-width: 31.5%;
 }
 
 .stepTitle{

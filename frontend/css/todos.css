@@ -76,7 +76,6 @@ input:focus{
     font-family: 'Caveat' ;
     border-radius: 48px;
     padding: 0.7%;
-    border: none;
     color: #6d082c;
     background-color: #fde82a50 ;
     transition: 1s;
@@ -175,10 +174,8 @@ input:focus{
     border:none;
     padding: 6px;
     background-image: linear-gradient(to right, #fdffb6, rgb(243, 96, 76));
-    position: absolute;
     width: 90%;
-    bottom: 3%;
-    left: 5%;
+    align-self: center;
     display: flex;
     justify-content: center;
     transition: 0.3s;
@@ -232,7 +229,7 @@ input:focus{
   height: 80%;
   min-width: 600px;
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 50;
@@ -305,13 +302,14 @@ input:focus{
 
 .saveStepButton{
     font-family: 'Caveat' ;
-    border-radius: 48px;
+    border-radius: 20px;
     padding: 0.7%;
     border: none;
     color: #6d082c;
     background-color: #f3e77d ;
     transition: 1s;
     font-size: 22px;
+    border: 1px solid gold;
 }
 
 .saveStepButton:hover{
@@ -337,7 +335,7 @@ input:focus{
 .stepItem{
     border-radius: 8px;
     overflow: auto;
-    max-height: 250px;
+    height: 80%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -376,6 +374,9 @@ input:focus{
     padding: 3%;
     border-radius: 8px;
     cursor: pointer;
+    display: flex;
+    align-self: center;
+    margin-top: 2.5%;
 }
 
 .stepListContainer{

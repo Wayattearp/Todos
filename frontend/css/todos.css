@@ -81,11 +81,11 @@ input:focus{
     background-color: #fde82a50 ;
     transition: 1s;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .saveButton:hover{
     transition: 1s;
-    cursor: pointer;
     transform: scale(1.1);
     box-shadow: -7px 0px 8px #fdffb6;
     background-image: linear-gradient(to right, #fdffb6, #fdc12ab9);
@@ -170,7 +170,7 @@ input:focus{
 
 .deleteTodoButton{
     cursor: pointer;
-    font-size: 16px;
+    font-size: 22px;
     border-radius: 8px;
     border:none;
     padding: 6px;
@@ -181,6 +181,16 @@ input:focus{
     left: 5%;
     display: flex;
     justify-content: center;
+    transition: 0.3s;
+
+}
+
+.deleteTodoButton:hover{
+    transition: 0.3s;
+    color: rgb(204, 13, 7);
+    transform: scale(1.05);
+
+
 }
 
 .auto-enter {

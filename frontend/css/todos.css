@@ -219,7 +219,7 @@ input:focus{
 
 .stepForm {
     display: flex;
-    margin: 5%;
+    margin: 3%;
     flex-direction: column;
     align-items: center;
 }
@@ -327,7 +327,7 @@ input:focus{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    max-height: 19vh; 
+    max-height: 20vh; 
 }
 
 .stepItem{

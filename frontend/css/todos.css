@@ -172,17 +172,16 @@ input:focus{
 
 .deleteTodoButton{
     cursor: pointer;
-    font-size: 22px;
+    font-size: 20px;
     border-radius: 8px;
-    border:none;
-    padding: 6px;
+    border: none;
+    padding: 2px;
     background-image: linear-gradient(to right, #fdffb6, rgb(243, 96, 76));
     width: 90%;
     align-self: center;
     display: flex;
     justify-content: center;
     transition: 0.3s;
-
 }
 
 .deleteTodoButton:hover{

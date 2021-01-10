@@ -324,14 +324,11 @@ input:focus{
 }
 
 .stepsContainer{
-    max-width: 100%;
     overflow: auto;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin: 3%;
-    height: fit-content;
-    
+    max-height: 19vh; 
 }
 
 .stepItem{

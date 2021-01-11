@@ -29,7 +29,7 @@ class StepListItem extends React.Component {
                     <button className="stepStatus"
                         onClick={this.toggleStep}
                         style={{ background: done ? 'rgb(173, 238, 207)' : '#fee355' }}>
-                        {done ? 'Done' : 'In Progress'}
+                        {done ? 'Done' : 'Working'}
 
                     </button>
                     <div className="stepTitle">

@@ -328,7 +328,7 @@ input:focus{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .stepItem{
@@ -338,13 +338,15 @@ input:focus{
     flex-direction: column;
     text-align: center;
     background: floralwhite;
+    min-width: 282px;
+    min-height: 268px;
 }
 
 .stepItemContainer{
     background-color: whitesmoke;
     border-radius: 8px;
     margin: 1%;
-    min-width: 31.5%;
+    width: 50%;
 }
 
 .stepTitle{

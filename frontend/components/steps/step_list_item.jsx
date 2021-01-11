@@ -24,9 +24,13 @@ class StepListItem extends React.Component {
         const { title, body, done } = step;
         return (
             <div className="stepItemContainer">
-                <div className="stepItem">
+                <div className="stepItem" 
+                    style={{ border: done ? '2px solid rgb(173, 238, 207)' : '2px solid #fee355' }}>
                     <button className="stepStatus"
-                        onClick={this.toggleStep}>{done ? 'Done' : 'In Progress'}
+                        onClick={this.toggleStep}
+                        style={{ background: done ? 'rgb(173, 238, 207)' : '#fee355' }}>
+                        {done ? 'Done' : 'In Progress'}
+
                     </button>
                     <div className="stepTitle">
                         {title}

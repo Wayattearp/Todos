@@ -182,8 +182,7 @@ input:focus{
     display: flex;
     justify-content: center;
     transition: 0.3s;
-    position: absolute;
-    bottom: 2%;
+    margin-top: 2%;
 }
 
 .deleteTodoButton:hover{
@@ -230,7 +229,6 @@ input:focus{
     font-size: 20px;
     border-radius: 18px;
     max-width: 60%;
-    min-height: 80%;
     min-width: 600px;
     position: absolute;
     top: 50%;
@@ -330,6 +328,7 @@ input:focus{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .stepItem{
@@ -338,7 +337,7 @@ input:focus{
     display: flex;
     flex-direction: column;
     text-align: center;
-
+    background: floralwhite;
 }
 
 .stepItemContainer{

@@ -318,7 +318,7 @@ input:focus{
     transition: 1s;
     cursor: pointer;
     transform: scale(1.1);
-    box-shadow: -7px 0px 8px #fdffb6;
+    box-shadow: -7px 0px 8px #fafcae;
     background-image: linear-gradient(to right, #fdffb6, #fdc12ab9);
 
 }

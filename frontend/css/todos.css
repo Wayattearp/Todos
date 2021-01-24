@@ -168,6 +168,7 @@ input:focus{
     max-height: 10%;
     background: beige;
     padding: 2%;
+    font-size: xx-large;
 }
 
 .deleteTodoButton{
@@ -276,7 +277,7 @@ input:focus{
 
 .inputStep{
     padding: 7px;
-    font-size: 18px;
+    font-size: xx-large;
     border-radius: 10px;
     border: 1px solid grey;
     background-color: whitesmoke;
@@ -287,13 +288,14 @@ input:focus{
     font-family: 'Caveat', cursive;
     transition: 00.5s;
     padding: 14px;
-    font-size: 18px;
+    font-size: x-large;
     border-radius: 10px;
     resize: none;
     background-color: whitesmoke;
     border: none;
     border: 1px solid grey;
     margin: 2%;
+    max-width: 500px;
 }
 
 .textAreaStep:focus{
@@ -332,6 +334,7 @@ input:focus{
 }
 
 .stepItem{
+    font-size: x-large;
     border-radius: 8px;
     overflow: auto;
     display: flex;

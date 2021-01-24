@@ -176,7 +176,7 @@ input:focus{
     font-size: 20px;
     border-radius: 8px;
     border: none;
-    padding: 2px;
+    padding: 2%;
     background-image: linear-gradient(to right, #fdffb6, rgb(243, 96, 76));
     width: 90%;
     align-self: center;
@@ -230,7 +230,7 @@ input:focus{
     font-size: 20px;
     border-radius: 18px;
     max-width: 60%;
-    min-width: 600px;
+    min-width: 700px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -295,7 +295,7 @@ input:focus{
     border: none;
     border: 1px solid grey;
     margin: 2%;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .textAreaStep:focus{
@@ -306,8 +306,8 @@ input:focus{
 
 .saveStepButton{
     font-family: 'Caveat';
-    border-radius: 20px;
-    padding: 0.7%;
+    border-radius: 48px;
+    padding: 2%;
     border: none;
     color: #830431;
     background-color: #f5e86f;
@@ -363,7 +363,7 @@ input:focus{
 
 .deleteStep{
     cursor: pointer;
-    font-size: 14px;
+    font-size: large;
     background: transparent;
     color: rgb(248, 171, 159);
 }
@@ -380,6 +380,7 @@ input:focus{
     display: flex;
     align-self: center;
     margin-top: 2.5%;
+    font-size: large;
 }
 
 .stepListContainer{

@@ -41,7 +41,7 @@ class TodoForm extends React.Component {
                 <label className="todoBodyBox">
                     <textarea
                         className="textArea"
-                        placeholder="How do I see it...🤔" value={this.state.body}
+                        placeholder="Imagine it done...🤔" value={this.state.body}
                         onChange={this.update('body')} cols='48' rows='6' required />
                 </label>
                 <button

@@ -20,8 +20,15 @@ class TodoList extends React.Component {
 
 
         );
+
+        function handleOnDragEnd(result) {
+            if (!result.destination) return;
+            const [reorderedItem] = InProgressTodoItems.splice(result.source.index, 1);
+            InProgressTodoItems.splice(result.destination.index, 0, reorderedItem);
+        }
+
         return <div>
-            <DragDropContext>
+            <DragDropContext onDragEnd={handleOnDragEnd}>
                 <Droppable droppableId="todoList">
                     {(provided) => (
                         <ul className="todoList" {...provided.droppableProps} ref={provided.innerRef}>
@@ -43,7 +50,7 @@ class TodoList extends React.Component {
                                 }
                                 )}
                             </ReactCSSTransitionGroup>
-
+                            {provided.placeholder}
                         </ul>
                     )}
                 </Droppable>

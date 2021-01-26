@@ -24,7 +24,10 @@ class TodoList extends React.Component {
         function handleOnDragEnd(result) {
             if (!result.destination) return;
             const [reorderedItem] = InProgressTodoItems.splice(result.source.index, 1);
+            // console.log(reorderedItem)
+            // console.log(result)
             InProgressTodoItems.splice(result.destination.index, 0, reorderedItem);
+            // receiveTodo(toggledTodo);
         }
 
         return <div>
@@ -56,7 +59,6 @@ class TodoList extends React.Component {
                 </Droppable>
 
                 <TodoForm receiveTodo={receiveTodo} />
-
                 <div className="todoList">
                     <ReactCSSTransitionGroup
                         transitionName='auto'

@@ -40,10 +40,10 @@ class StepForm extends React.Component {
                 </label>
                 <label >
                     <textarea
-                        className='textAreaStep'
+                        className='inputStep'
                         placeholder="Details..."
                         value={this.state.body}
-                        onChange={this.update('body')} cols='48' rows='5' required />
+                        onChange={this.update('body')} cols='40' rows='5' required />
                 </label>
                 <button 
                 className="saveStepButton"

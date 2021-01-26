@@ -16,7 +16,7 @@ span, article, footer, time, small {
 }
 
 html{
-    background-color: aliceblue;
+    background-color: #f5f5f5;
 }
 
 .todoForm{
@@ -24,47 +24,62 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: aliceblue;
-    font-size: 30px;
-    border-radius: 10px;
-    padding: 2%;
+    font-size: xx-large;
+    border-radius: 48%;
+    z-index: 47;
+    opacity: 85%;
+    transition: 2s;
+}
+
+.todoForm:hover{
+    transition: 0.5s;
+    opacity: 100%;
 }
 
 .todoTitleBox{
-    padding: 10px;
-    margin: 10px;
-    font-size: 48px;
+transition: 0.5s;
+    font-weight: 700;
+    font-size: xx-large;
+    text-align: center;
+    background-color: white;
+    padding: 6% 4% 6% 4%;
+    margin-bottom: 1%;
+    border-radius: 48%;
+    box-shadow: 4px 8px 16px 3px rgb(235 235 229);
 }
 
 .textArea{
+    transition: 0.5s;
     outline: none;
-    letter-spacing: 0.1em;
-    font-family: 'Caveat', cursive;
-    transition: 00.5s;
-    padding: 24px;
-    font-size: 30px;
-    border-radius: 10px;
-    resize: none;
-    background-color:whitesmoke;
-    border: none;
-    border: 1px solid grey;
-}
-.textArea:focus{
     letter-spacing: 0.2em;
+    font-family: 'Caveat', cursive;
+    padding: 2%;
+    font-size: x-large;
+    border-radius: 48%;
+    resize: none;
+    border: none;
+    padding: 10% 0% 0% 18%;
+     box-shadow: 4px 17px 12px 3px rgb(235 235 229 / 49%);
+}
+
+.textArea:focus{
+    opacity: 100%;
     transition: 00.5s;
     outline: none;
+    box-shadow: 4px 8px 16px 3px rgb(235 235 229);
 }
 
 .input{
-    padding: 7px;
-    font-size: 38px;
+    padding: 1%;
+    font-size: xx-large;
     border-radius: 10px;
-    border: 1px solid grey;
+    border: 1px solid white;
     background-color: whitesmoke;
     
 }
 
 input:focus{
+    background-color: #f5f6f6;
     transition: 0.5s;
     border-radius: 10px;
     outline: none;
@@ -73,32 +88,38 @@ input:focus{
 }
 
 .saveButton{
-    font-family: 'Caveat' ;
-    border-radius: 48px;
-    padding: 0.7%;
+    z-index: 148;
+    font-family: 'Caveat';
+    border-radius: 40%;
     color: #6d082c;
-    background-color: #fde82a50 ;
+    background-image: linear-gradient(to right, #fdffb6, #fdc12ab9);
     transition: 1s;
-    font-size: 30px;
+    font-size: large;
     cursor: pointer;
+    padding: 9px;
+    box-shadow: 2px 10px 25px 1px #fdffb6;
 }
 
 .saveButton:hover{
+    background-image: linear-gradient(to right, #fdc12ab9, #fdffb6);
     transition: 1s;
     transform: scale(1.1);
     box-shadow: -7px 0px 8px #fdffb6;
-    background-image: linear-gradient(to right, #fdffb6, #fdc12ab9);
 
 }
 
 /* TODO LIST */
 
+.TodoListContainer{
+    display: flex;
+
+}
+
 .todoList{
     list-style-type: none;
-    background-color: aliceblue;
+    background-color: #f5f5f5;
     margin: 0;
-    padding: 48px;
-    min-height: 50%;
+    padding: 3% 4% 1% 4%;
 }
 
 .todoList > span {
@@ -114,20 +135,23 @@ input:focus{
 }
 
 .todoItem{
+    text-transform: capitalize;
+    overflow: hidden;
     transition: 3s;
-    opacity: 85%;
+    opacity: 90%;
     min-width: 75px;
-    max-width: 250px;
-    margin: 20px;
+    max-width: 290px;
+    margin: 5%;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 48px;
-    font-size: 30px;
+    padding: 26px;
+    border-radius: 48%;
+    font-size: xx-large;
     text-align: center;
     background-color: white;
-   box-shadow: 0px 0px 20px 4px white;
-
+    box-shadow: 0px 0px 20px 4px white;
 }
+
+
 
 .todoItem:hover{
     transition: 0.3s;
@@ -276,14 +300,17 @@ input:focus{
 }
 
 .inputStep{
+    margin: 1%;
     padding: 7px;
     font-size: xx-large;
     border-radius: 10px;
     border: 1px solid grey;
     background-color: whitesmoke;
+    position: relative;
 }
 
 .textAreaStep{
+    height: 148px;
     outline: none;
     font-family: 'Caveat', cursive;
     transition: 00.5s;
@@ -312,8 +339,12 @@ input:focus{
     color: #830431;
     background-color: #f5e86f;
     transition: 1s;
-    font-size: 22px;
+    font-size: x-large;
     border: 1px solid rgb(249, 213, 9);
+    box-shadow: 4px 8px 16px 3px rgb(0 0 0 / 20%);
+    position: absolute;
+    right: 10%;
+
 }
 
 .saveStepButton:hover{
@@ -385,4 +416,10 @@ input:focus{
 
 .stepListContainer{
     height: 90%;
+}
+
+
+.giphyEmbed{
+    cursor: pointer;
+    margin: -10px;
 }

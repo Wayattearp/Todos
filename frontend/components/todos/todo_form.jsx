@@ -1,5 +1,6 @@
 import React from 'react';
 import { uniqueId } from '../../util/unique_id';
+import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 
 class TodoForm extends React.Component {
     constructor(props) {
@@ -26,28 +27,40 @@ class TodoForm extends React.Component {
         });
     }
 
+    handleThinkingGuySave() {
+        document.getElementById("saveButton").click()
+    }
+
     render() {
         return (
-            <form
-                className="todoForm"
-                onSubmit={this.handleSave}>
-                <label className="todoTitleBox">Title {': '}
-                    <input
-                        className="input"
-                        placeholder="改善" value={this.state.title}
-                        onChange={this.update('title')} required />
-                </label>
+            <DragDropContext>
+                <div className="formContainer">
+                    <form
+                        className="todoForm"
+                        onSubmit={this.handleSave}>
+                        <label className="todoTitleBox">Title {': '}
+                            <input
+                                className="input"
+                                placeholder="改善" value={this.state.title}
+                                onChange={this.update('title')} required />
+                        </label>
 
-                <label className="todoBodyBox">
-                    <textarea
-                        className="textArea"
-                        placeholder="Imagine it done...🤔" value={this.state.body}
-                        onChange={this.update('body')} cols='48' rows='6' required />
-                </label>
-                <button
-                    className="saveButton"
-                > Save </button>
-            </form>
+                        <label className="todoBodyBox">
+                            <textarea
+                                className="textArea"
+                                placeholder="Imagine it done...🤔" value={this.state.body}
+                                onChange={this.update('body')} cols='30' rows='5' required />
+                        </label>
+                        <img onClick={this.handleThinkingGuySave} src="../thinker.gif" width="200px" height="200px" frameBorder="0" className="giphyEmbed" allowFullScreen></img>
+                        <button
+                            className="saveButton"
+                            id={"saveButton"}
+                        > Save </button>
+                    </form>
+
+                </div>
+            </DragDropContext>
+
         )
     }
 }

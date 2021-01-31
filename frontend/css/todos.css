@@ -181,7 +181,7 @@ input:focus{
 
 .todoBody{
     border-radius: 12px;
-    align-self: center;
+    text-align: center;
     max-height: 10%;
     background: beige;
     padding: 2%;

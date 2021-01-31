@@ -1,5 +1,6 @@
 import React from 'react';
 import StepListContainer from '../steps/step_list_container';
+import { motion } from "framer-motion";
 
 class TodoDetailView extends React.Component {
     constructor(props) {
@@ -21,23 +22,63 @@ class TodoDetailView extends React.Component {
         const { removeTodo, todo } = this.props;
         return (
             <div className={this.state.visible ? "todoDetailVisible" : "todoDetailHidden"}>
-                <div className="StepsBackground">
-                    <div className="todoView"
-                        // style={{ background: '#' + this.props.color }}
-                        >
+                <motion.div className="StepsBackground"
+                    initial={{
+                        opacity: 0
+                    }}
+                    animate={{
+                        opacity: 1,
+                        transition: {
+                            duration: 0.5
+                        }
+                    }}
+                >
+
+                    <motion.div className="todoView"
+                    // style={{ background: '#' + this.props.color }}
+                    >
                         <button
                             className="closeStepsButton"
                             onClick={this.toggleStepsForm}>×</button>
-                        <div className="todoBody">
+                        <motion.div className="todoBody"
+                            initial={{
+                                scale: 0
+                            }}
+                            animate={{
+                                scale: 1,
+                                transition: {
+                                    duration: 0.4
+                                }
+                            }}>
                             {todo.body}
-                        </div>
-                        <div className="stepListContainer">
-                         <StepListContainer 
-                         todo_id={todo.id} />
-                        </div>
-                        <button className="deleteTodoButton" onClick={removeTodo}>Delete Todo</button>
-                    </div>
-                </div>
+                        </motion.div>
+                        <motion.div className="stepListContainer"
+                            initial={{
+                                scale: 0
+                            }}
+                            animate={{
+                                scale: 1,
+                                transition: {
+                                    duration: 0.6
+                                }
+                            }}>
+                            <StepListContainer
+                                todo_id={todo.id} />
+                        </motion.div>
+                        <motion.button className="deleteTodoButton"
+                            initial={{
+                                scale: 0
+                            }}
+                            animate={{
+                                scale: 1,
+                                transition: {
+                                    duration: 0.8
+                                }
+                            }}
+                            onClick={removeTodo}>Delete Todo</motion.button>
+
+                    </motion.div>
+                </motion.div>
             </div>
         );
     }

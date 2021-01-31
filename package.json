@@ -23,6 +23,7 @@
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
     "babel-loader": "^8.2.2",
+    "framer-motion": "^3.2.2-rc.1",
     "react": "^17.0.1",
     "react-addons-css-transition-group": "^15.6.2",
     "react-beautiful-dnd": "^13.0.0",

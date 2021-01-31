@@ -41,7 +41,7 @@ class TodoList extends React.Component {
                         <ul className="todoList" {...provided.droppableProps} ref={provided.innerRef}>
                             <ReactCSSTransitionGroup
                                 transitionName='auto'
-                                transitionEnterTimeout={3000}
+                                transitionEnterTimeout={2000}
                                 transitionLeaveTimeout={500}>
                                 {InProgressTodoItems.map((todo, index) => {
                                     return (
@@ -56,8 +56,9 @@ class TodoList extends React.Component {
                                     )
                                 }
                                 )}
+                                {provided.placeholder}
                             </ReactCSSTransitionGroup>
-                            {provided.placeholder}
+                            
                             
                         </ul>
                     )}
@@ -70,7 +71,7 @@ class TodoList extends React.Component {
                         <ul className="todoList" {...provided.droppableProps} ref={provided.innerRef}>
                             <ReactCSSTransitionGroup
                                 transitionName='auto'
-                                transitionEnterTimeout={3000}
+                                transitionEnterTimeout={2000}
                                 transitionLeaveTimeout={500}>
                                 {doneTodoItems.map((todo, index) => {
                                     return (

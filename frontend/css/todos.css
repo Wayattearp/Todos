@@ -26,15 +26,6 @@ html{
     align-items: center;
     font-size: xx-large;
     border-radius: 48%;
-    z-index: 47;
-    opacity: 85%;
-    transition: 2s;
-}
-
-
-.todoForm:hover{
-    transition: 0.5s;
-    opacity: 100%;
 }
 
 .todoTitleBox{
@@ -47,9 +38,11 @@ html{
     margin-bottom: 1%;
     border-radius: 48%;
     box-shadow: 4px 8px 16px 3px rgb(235 235 229);
+    z-index: 2;
 }
 
 .textArea{
+    z-index: 2;
     display: flex;
     text-align: center;
     transition: 0.5s;
@@ -65,7 +58,6 @@ html{
 }
 
 .textArea:focus{
-    opacity: 100%;
     transition: 00.5s;
     outline: none;
     box-shadow: 4px 8px 16px 3px rgb(235 235 229);
@@ -92,7 +84,6 @@ input:focus{
 }
 
 .saveButton{
-    z-index: 148;
     font-family: 'Caveat';
     border-radius: 62%;
     color: #6d082c;
@@ -136,13 +127,11 @@ input:focus{
 .todoItemContainer{
     display: flex;
     flex-direction: column;
-    transition: 0.5s;
 }
 
 .todoItem{
     text-transform: capitalize;
     overflow: hidden;
-    transition: 3s;
     opacity: 90%;
     min-width: 75px;
     max-width: 290px;
@@ -162,7 +151,6 @@ input:focus{
 .todoItem:hover{
     transition: 0.3s;
     transform: scale(1.4);
-    z-index: 48;
 }
 
 
@@ -265,7 +253,6 @@ input:focus{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 50;
     padding: 3%;
     display: flex;
     flex-direction: column;

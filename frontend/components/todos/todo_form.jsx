@@ -40,7 +40,11 @@ class TodoForm extends React.Component {
                 }}
                 animate={{
                     scale: 1,
-                    opacity: 1
+                    opacity: 1,
+                    transition: {
+                        duration: 0.3
+                    }
+                    
                 }}
                 className="formContainer">
                     <form

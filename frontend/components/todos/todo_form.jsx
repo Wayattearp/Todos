@@ -1,6 +1,6 @@
 import React from 'react';
 import { uniqueId } from '../../util/unique_id';
-import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+import { motion } from "framer-motion"
 
 class TodoForm extends React.Component {
     constructor(props) {
@@ -33,8 +33,16 @@ class TodoForm extends React.Component {
 
     render() {
         return (
-            <DragDropContext>
-                <div className="formContainer">
+                <motion.div 
+                initial={{
+                    scale: 0,
+                    opacity: 0
+                }}
+                animate={{
+                    scale: 1,
+                    opacity: 1
+                }}
+                className="formContainer">
                     <form
                         className="todoForm"
                         onSubmit={this.handleSave}>
@@ -58,8 +66,7 @@ class TodoForm extends React.Component {
                         > Save </button>
                     </form>
 
-                </div>
-            </DragDropContext>
+                </motion.div>
 
         )
     }

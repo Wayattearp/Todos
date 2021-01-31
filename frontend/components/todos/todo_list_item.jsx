@@ -1,5 +1,6 @@
 import React from 'react';
 import TodoDetailViewContainer from './todo_detail_view_container';
+import { motion } from "framer-motion";
 
 class TodoListItem extends React.Component {
     constructor(props) {
@@ -39,7 +40,13 @@ class TodoListItem extends React.Component {
             detail = <TodoDetailViewContainer todo={todo} color={randomColor} />
         }
 
-        return <div
+        return <motion.div
+            initial={{
+                scale: 0
+            }}
+            animate={{
+                scale: 1
+            }}
             className="todoItemContainer">
             <li className="todoItem"
                 style={{ 
@@ -54,7 +61,7 @@ class TodoListItem extends React.Component {
                 onClick={this.toggleTodo}>{done ? 'Done' : 'In Progress'}
             </button>
 
-        </div>
+        </motion.div>
     }
 }
 

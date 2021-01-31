@@ -3,6 +3,7 @@ import TodoListItem from './todo_list_item';
 import TodoForm from './todo_form'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+import { motion } from "framer-motion"
 
 class TodoList extends React.Component {
 
@@ -56,7 +57,7 @@ class TodoList extends React.Component {
                                 }
                                 )}
                             </ReactCSSTransitionGroup>
-                            {/* {provided.placeholder} */}
+                            {provided.placeholder}
                             
                         </ul>
                     )}

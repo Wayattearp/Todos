@@ -47,7 +47,7 @@ class TodoForm extends React.Component {
                     
                 }}
                 className="formContainer">
-                    <form
+                <form
                         className="todoForm"
                         onSubmit={this.handleSave}>
                         <label className="todoTitleBox">Title {': '}

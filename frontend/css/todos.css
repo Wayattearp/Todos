@@ -131,10 +131,8 @@ input:focus{
 .todoItem{
     text-transform: capitalize;
     overflow: hidden;
-    opacity: 90%;
-    min-width: 80%;
-    max-width: 290px;
-    margin: 5%;
+    max-width: 248px;
+    margin: 1vh;
     cursor: pointer;
     padding: 26px;
     border-radius: 48%;

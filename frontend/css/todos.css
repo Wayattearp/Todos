@@ -332,7 +332,7 @@ input:focus{
     background-color: #f5e86f;
     transition: 1s;
     font-size: x-large;
-    border: 1px solid rgb(249, 213, 9);
+    border: 1px solid #f9d509;
     box-shadow: 4px 8px 16px 3px rgb(0 0 0 / 20%);
     position: absolute;
     right: 10%;

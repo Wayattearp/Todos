@@ -17,8 +17,8 @@ function TodoListItem(props) {
 
     const [detail, handleDetail] = useState(false);
 
-    let colors = ['e8efeb', 'adeecf', 'e8e8e4', 'ffd7ba', 'fae1dd', 'fdffb6', 'a9d6e5', 'fde2e4', 'e9edc9'];
-    let randomColor = colors[Math.floor(Math.random() * 9)];
+    let colors = [ 'adeecf', 'fae1dd', 'fdffb6', 'a9d6e5', 'fde2e4', 'e9edc9'];
+    let randomColor = colors[Math.floor(Math.random() * 6)];
 
     const todo = props.todo;
     const { title, done } = todo;
@@ -31,9 +31,9 @@ function TodoListItem(props) {
 
     return <div className="todoItemContainer">
         <motion.li className="todoItem"
-            style={{
-                background: '#' + randomColor
-            }}
+            style={{ 
+                background: '#' + randomColor,
+                boxShadow: `2px 0px 5px 10px ${'#'+randomColor}`}}
             initial={{
                 opacity: 0
             }}

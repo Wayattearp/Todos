@@ -20,7 +20,7 @@ html{
 }
 
 .todoForm{
-    margin-top: 15%;
+    margin-top: 12vh;
     position: relative;
     font-family: 'Comfortaa', cursive;
     display: flex;
@@ -35,6 +35,7 @@ html{
 
 h1{
     font-family: 'Comfortaa', cursive;
+    cursor: default;
 }
 
 .accomplished {
@@ -48,7 +49,7 @@ h1{
     position: absolute;
     top: 2vh;
     left: 10vw;
-    color: rgb(194, 150, 5);
+    color: rgb(245 189 6 / 77%);
 }
 
 .todoTitleBox{
@@ -70,7 +71,7 @@ h1{
     outline: none;
     letter-spacing: 0.2em;
     font-family: 'Caveat', cursive;
-    padding: 14%;
+    padding: 4vw;
     font-size: x-large;
     border-radius: 48%;
     resize: none;
@@ -135,6 +136,7 @@ input:focus{
     padding: 8vh 2vw 1vh 2vw;
 }
 
+
 .todoList{
     list-style-type: none;
     background-color: #f5f5f5;
@@ -150,7 +152,7 @@ input:focus{
     flex-wrap: wrap;
     justify-content: space-evenly;
     overflow: scroll;
-    max-width: 37vw;
+    max-width: 40vw;
 }
 
 
@@ -161,11 +163,11 @@ input:focus{
 
 .todoItem{
     text-transform: capitalize;
-    overflow: hidden;
-    max-width: 248px;
-    margin: 2vh;
+    overflow: scroll;
+    max-width: 20vw;
+    margin: 1.9vh;
     cursor: pointer;
-    padding: 26px;
+    padding: 1vw;
     border-radius: 48%;
     font-size: xx-large;
     text-align: center;
@@ -241,12 +243,12 @@ input:focus{
 
 .auto-enter {
     opacity: 0.01;
-    transform: translateY(250%);
+    transform: translateY(300%);
 }
 
 .auto-enter.auto-enter-active {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
     transition: opacity 5000ms, transform 2000ms;
 }
 
@@ -257,8 +259,8 @@ input:focus{
 
 .auto-leave.auto-leave-active {
     opacity: 0.01;
-    transform: translateX(300%);
-    transition: opacity 1000ms, transform 1000ms;
+    transform: translateY(-300%);
+    transition: opacity 1000ms, transform 2000ms;
 }
 
 /* STEPS  */
@@ -320,7 +322,7 @@ input:focus{
 }
 
 .inputStep{
-    margin: 1%;
+    margin: 1vw;
     padding: 7px;
     font-size: xx-large;
     border-radius: 10px;

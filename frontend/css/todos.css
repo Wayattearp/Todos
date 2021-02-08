@@ -59,7 +59,7 @@ h1{
     text-align: center;
     background-color: white;
     padding: 4vh;
-    margin-bottom: 1%;
+    margin-bottom: 1vh;
     border-radius: 48%;
     box-shadow: 4px 8px 16px 3px rgb(235 235 229);
 }
@@ -152,7 +152,7 @@ input:focus{
     flex-wrap: wrap;
     justify-content: space-evenly;
     overflow: scroll;
-    max-width: 40vw;
+    max-width: 48vw;
 }
 
 
@@ -162,12 +162,11 @@ input:focus{
 }
 
 .todoItem{
-    text-transform: capitalize;
     overflow: scroll;
-    max-width: 20vw;
+    max-width: 14vw;
     margin: 1.9vh;
     cursor: pointer;
-    padding: 1vw;
+    padding: 2vh;
     border-radius: 48%;
     font-size: xx-large;
     text-align: center;

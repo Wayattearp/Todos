@@ -34,64 +34,69 @@ class TodoList extends React.Component {
         }
 
         return <div>
-            <DragDropContext onDragEnd={handleOnDragEndInProgress}>
-                <Droppable droppableId="todoList">
-                    {(provided) => (
-                        <ul className="todoList" {...provided.droppableProps} ref={provided.innerRef}>
-                            <ReactCSSTransitionGroup
-                                transitionName='auto'
-                                transitionEnterTimeout={2000}
-                                transitionLeaveTimeout={500}>
-                                {InProgressTodoItems.map((todo, index) => {
-                                    return (
-                                        <Draggable key={todo.key} draggableId={todo.key} index={index}>
+            <h1 className="workingOn">Working on</h1>
+            <div className="appContainer">
+                <DragDropContext onDragEnd={handleOnDragEndInProgress}>
+                    <Droppable droppableId="todoList">
+                        {(provided) => (
+                            <ul className="todoList" {...provided.droppableProps} ref={provided.innerRef}>
+                                <ReactCSSTransitionGroup
+                                    transitionName='auto'
+                                    transitionEnterTimeout={2000}
+                                    transitionLeaveTimeout={500}>
+                                    {InProgressTodoItems.map((todo, index) => {
+                                        return (
+                                            <Draggable key={todo.key} draggableId={todo.key} index={index}>
 
-                                            {(provided) => (
-                                                <span ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
-                                                    {todo}
-                                                </span>
-                                            )}
-                                        </Draggable>
-                                    )
-                                }
-                                )}
-                                {provided.placeholder}
-                            </ReactCSSTransitionGroup>
-                            
-                            
-                        </ul>
-                    )}
-                </Droppable>
-            </DragDropContext>
+                                                {(provided) => (
+                                                    <span ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
+                                                        {todo}
+                                                    </span>
+                                                )}
+                                            </Draggable>
+                                        )
+                                    }
+                                    )}
+                                    {provided.placeholder}
+                                </ReactCSSTransitionGroup>
+
+
+                            </ul>
+                        )}
+                    </Droppable>
+                </DragDropContext>
+                <h1 className="accomplished">Accomplished</h1>
                 <TodoForm receiveTodo={receiveTodo} />
-            <DragDropContext onDragEnd={handleOnDragEndDone}>
-                <Droppable droppableId="todoList">
-                    {(provided) => (
-                        <ul className="todoList" {...provided.droppableProps} ref={provided.innerRef}>
-                            <ReactCSSTransitionGroup
-                                transitionName='auto'
-                                transitionEnterTimeout={2000}
-                                transitionLeaveTimeout={500}>
-                                {doneTodoItems.map((todo, index) => {
-                                    return (
-                                        <Draggable key={todo.key} draggableId={todo.key} index={index}>
+                <DragDropContext onDragEnd={handleOnDragEndDone}>
+                    <Droppable droppableId="todoList">
 
-                                            {(provided) => (
-                                                <span ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
-                                                    {todo}
-                                                </span>
-                                            )}
-                                        </Draggable>
-                                    )
-                                }
-                                )}
-                            </ReactCSSTransitionGroup>
-                            {provided.placeholder}
-                            
-                        </ul>
-                    )}
-                </Droppable>
-            </DragDropContext>
+                        {(provided) => (
+                            <ul className="todoList" {...provided.droppableProps} ref={provided.innerRef}>
+                                <ReactCSSTransitionGroup
+                                    transitionName='auto'
+                                    transitionEnterTimeout={2000}
+                                    transitionLeaveTimeout={500}>
+                                    {doneTodoItems.map((todo, index) => {
+                                        return (
+                                            <Draggable key={todo.key} draggableId={todo.key} index={index}>
+
+                                                {(provided) => (
+                                                    <span ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
+                                                        {todo}
+                                                    </span>
+                                                )}
+                                            </Draggable>
+                                        )
+                                    }
+                                    )}
+                                </ReactCSSTransitionGroup>
+                                {provided.placeholder}
+
+                            </ul>
+                        )}
+                    </Droppable>
+                </DragDropContext>
+            </div>
         </div>
     }
 }

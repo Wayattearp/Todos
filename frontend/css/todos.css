@@ -243,7 +243,7 @@ input:focus{
 
 .auto-enter {
     opacity: 0.01;
-    transform: translateY(300%);
+    transform: translateX(-300%);
 }
 
 .auto-enter.auto-enter-active {
@@ -259,7 +259,30 @@ input:focus{
 
 .auto-leave.auto-leave-active {
     opacity: 0.01;
-    transform: translateY(-300%);
+    transform: translateX(-300%);
+    transition: opacity 1000ms, transform 2000ms;
+}
+
+
+.autodone-enter {
+    opacity: 0.01;
+    transform: translateX(300%);
+}
+
+.autodone-enter.autodone-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 5000ms, transform 2000ms;
+}
+
+.autodone-leave {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.autodone-leave.autodone-leave-active {
+    opacity: 0.01;
+    transform: translateX(300%);
     transition: opacity 1000ms, transform 2000ms;
 }
 

@@ -73,7 +73,7 @@ class TodoList extends React.Component {
                             {(provided) => (
                                 <ul className="todoList" {...provided.droppableProps} ref={provided.innerRef}>
                                     <ReactCSSTransitionGroup
-                                        transitionName='auto'
+                                        transitionName='autodone'
                                         transitionEnterTimeout={2000}
                                         transitionLeaveTimeout={500}>
                                         {doneTodoItems.map((todo, index) => {

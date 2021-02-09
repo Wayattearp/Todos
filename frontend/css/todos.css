@@ -53,21 +53,44 @@ h1{
 }
 
 .todoTitleBox{
+    animation: titlebox-anim 10s ease-out infinite;
     transition: 0.5s;
     font-weight: 700;
     font-size: xx-large;
     text-align: center;
-    background-color: white;
+    background: radial-gradient(circle at 70% 30%, white, rgb(232, 248, 251));
     padding: 4vh;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
     border-radius: 48%;
-    box-shadow: 4px 8px 16px 3px rgb(235 235 229);
+    box-shadow: 2px 4px 15px 0px rgb(235 235 229);
+}
+
+@keyframes titlebox-anim {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: translateY(3px)  translateX(1px) scale(1.08);
+  }
+  48% {
+    transform: skewX(-2deg) translateY(6px) translateX(1px) scaleY(1.09) scaleX(1.03);
+  }
+  68% {
+    transform: skewX(4deg) scaleY(1.05) translateX(1px) scaleX(0.97);
+  }
+  85% {
+    transform: translateY(3px) translateX(-1px) scale(1.02);
+  }
+  97%, 100% {
+    transform: scale(1);
+  }
 }
 
 .textArea{
-    
+    animation: textarea-anim 10s ease-out infinite;
     display: flex;
     text-align: center;
+    margin-bottom: 2vh;
     outline: none;
     letter-spacing: 0.2em;
     font-family: 'Caveat', cursive;
@@ -76,7 +99,29 @@ h1{
     border-radius: 48%;
     resize: none;
     border: none;
-     box-shadow: 4px 17px 12px 3px rgb(235 235 229 / 49%);
+    box-shadow: 2px 4px 15px 0px rgb(235 235 229);
+    background: radial-gradient(circle at 70% 30%, white, rgb(232, 247, 251));
+}
+
+@keyframes textarea-anim {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.02) skewX(4deg);
+  }
+  48% {
+    transform: translateY(6px) translateX(-1px) scaleX(0.97) scaleY(1.03);
+  }
+  68% {
+    transform: scaleX(1.05) translateY(1px) scaleY(1.03);
+  }
+  85% {
+    transform: skewX(-5deg) translateY(3px) translateX(1px) scale(1.01);
+  }
+  97%, 100% {
+    transform: scale(1);
+  }
 }
 
 .textArea:focus{
@@ -172,6 +217,7 @@ input:focus{
     text-align: center;
     font-family: 'Amatic SC', cursive;
 }
+
 
 
 

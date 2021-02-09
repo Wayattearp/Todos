@@ -32,8 +32,8 @@ function TodoListItem(props) {
     return <div className="todoItemContainer">
         <motion.li className="todoItem"
             style={{ 
-                background: '#' + randomColor,
-                boxShadow: `2px 0px 5px 10px ${'#'+randomColor}`}}
+                background: `radial-gradient(circle at 70% 30%, whitesmoke, #${randomColor})`,
+                boxShadow: `0px 0px 8px 1px ${'#'+randomColor}`}}
             initial={{
                 opacity: 0
             }}

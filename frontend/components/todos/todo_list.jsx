@@ -16,18 +16,6 @@ function TodoList(props) {
         }
     });
 
-    // function handleOnDragEndInProgress(result) {
-    //     if (!result.destination) return;
-    //     const [reorderedItem] = inProgressTodoItems.splice(result.source.index, 1);
-    //     inProgressTodoItems.splice(result.destination.index, 0, reorderedItem);
-    // }
-
-    // function handleOnDragEndDone(result) {
-    //     if (!result.destination) return;
-    //     const [reorderedItem] = doneTodoItems.splice(result.source.index, 1);
-    //     doneTodoItems.splice(result.destination.index, 0, reorderedItem);
-    // }
-
     const [todosInProgress, updateTodosInProgress] = useState(inProgressTodoItems);
     const [todosDone, updateDoneTodoItems] = useState(doneTodoItems);
 

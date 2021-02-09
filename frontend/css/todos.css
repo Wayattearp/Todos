@@ -71,7 +71,7 @@ h1{
     outline: none;
     letter-spacing: 0.2em;
     font-family: 'Caveat', cursive;
-    padding: 4vw;
+    padding: 4vh;
     font-size: x-large;
     border-radius: 48%;
     resize: none;
@@ -151,8 +151,8 @@ input:focus{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    overflow: scroll;
-    max-width: 48vw;
+    overflow-y: scroll;
+    max-width: 40vw;
 }
 
 

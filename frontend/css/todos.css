@@ -70,16 +70,16 @@ h1{
     transform: scale(1);
   }
   20% {
-    transform: translateY(3px)  translateX(1px) scale(1.08);
+    transform: translateY(3px) scale(1.08);
   }
   48% {
-    transform: skewX(-2deg) translateY(6px) translateX(1px) scaleY(1.09) scaleX(1.03);
+    transform: skewX(-2deg) translateY(6px) scaleY(1.09) scaleX(1.03);
   }
   68% {
-    transform: skewX(4deg) scaleY(1.05) translateX(1px) scaleX(0.97);
+    transform:  scaleY(1.05) scaleX(0.97);
   }
   85% {
-    transform: translateY(3px) translateX(-1px) scale(1.02);
+    transform: skewX(3deg) translateY(3px) scale(1.02);
   }
   97%, 100% {
     transform: scale(1);
@@ -103,6 +103,8 @@ h1{
     background: radial-gradient(circle at 70% 30%, white, rgb(232, 247, 251));
 }
 
+
+
 @keyframes textarea-anim {
   0% {
     transform: scale(1);
@@ -111,13 +113,13 @@ h1{
     transform: scale(1.02) skewX(4deg);
   }
   48% {
-    transform: translateY(6px) translateX(-1px) scaleX(0.97) scaleY(1.03);
+    transform: translateY(6px)  scaleX(0.97) scaleY(1.03);
   }
   68% {
     transform: scaleX(1.05) translateY(1px) scaleY(1.03);
   }
   85% {
-    transform: skewX(-5deg) translateY(3px) translateX(1px) scale(1.01);
+    transform: skewX(-5deg) translateY(3px)  scale(1.01);
   }
   97%, 100% {
     transform: scale(1);

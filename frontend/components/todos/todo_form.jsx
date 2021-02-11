@@ -39,6 +39,7 @@ class TodoForm extends React.Component {
                     className="todoForm"
                     onSubmit={this.handleSave}>
                     <label className="todoTitleBox">Title {': '}
+                    <br/>
                         <input
                             className="input"
                             placeholder="改善" value={this.state.title}

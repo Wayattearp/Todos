@@ -18,6 +18,12 @@ span, article, footer, time, small {
 html{
     background-color: #f5f5f5;
 }
+.titles{
+    font-size: x-large;
+    padding-top: 4vh;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 .todoForm{
     margin-top: 12vh;
@@ -39,16 +45,18 @@ h1{
 }
 
 .accomplished {
-    position: absolute;
+    /* position: absolute;
     top: 2vh;
-    right: 10vw;
+    right: 10vw; */
+    margin-left: 20vw;
     color: rgba(18, 105, 18, 0.904);
 }
 
 .workingOn {
-    position: absolute;
+    /* position: absolute;
     top: 2vh;
-    left: 10vw;
+    left: 10vw; */
+    margin-right: 20vw;
     color: rgb(245 189 6 / 78%);
 }
 
@@ -180,7 +188,7 @@ input:focus{
 .appContainer{
     display: flex;
     flex-direction: row;
-    padding: 8vh 2vw 1vh 2vw;
+    padding: 0vh 2vw 1vh 2vw;
 }
 
 
@@ -206,20 +214,26 @@ input:focus{
 .todoItemContainer{
     display: flex;
     flex-direction: column;
+    opacity: 0.75;
+} 
+
+.todoItemContainer:hover{
+    opacity: 1;
 }
 
 .todoItem{
+    display: flex;
+    flex-direction: column;
     overflow: scroll;
-    max-width: 14vw;
+    max-width: 25vw;
     margin: 1.9vh;
     cursor: pointer;
     padding: 2vh;
-    border-radius: 48%;
+    border-radius: 100px;
     font-size: xx-large;
     text-align: center;
     font-family: 'Amatic SC', cursive;
 }
-
 
 
 
@@ -243,6 +257,10 @@ input:focus{
     background-color: rgba(20, 218, 20, 0.486);
 }
 
+.todoButtonDone:hover{
+    background-color: rgba(250, 201, 41, 0.486);
+}
+
 .todoButtonInProgress{
     cursor: pointer;
      transition: 0.75s;
@@ -254,6 +272,10 @@ input:focus{
     padding: 4px;
     background-color: rgba(250, 201, 41, 0.486);
 
+}
+
+.todoButtonInProgress:hover{
+    background-color: rgba(20, 218, 20, 0.486);
 }
 
 .todoBody{

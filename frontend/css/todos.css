@@ -26,7 +26,6 @@ html{
 }
 
 .todoForm{
-    margin-top: 12vh;
     position: relative;
     font-family: 'Comfortaa', cursive;
     display: flex;
@@ -61,13 +60,15 @@ h1{
 }
 
 .todoTitleBox{
+    display: flex;
+    justify-content: center;
     animation: titlebox-anim 10s ease-out infinite;
     transition: 0.5s;
     font-weight: 700;
     font-size: xx-large;
     text-align: center;
     background: radial-gradient(circle at 70% 30%, white, rgb(232, 248, 251));
-    padding: 4vh;
+    padding: 8vh;
     margin-bottom: 2vh;
     border-radius: 48%;
     box-shadow: 2px 4px 15px 0px rgb(235 235 229);
@@ -98,11 +99,12 @@ h1{
     animation: textarea-anim 10s ease-out infinite;
     display: flex;
     text-align: center;
+    justify-content: center;
     margin-bottom: 2vh;
     outline: none;
     letter-spacing: 0.2em;
     font-family: 'Caveat', cursive;
-    padding: 4vh;
+    padding: 6vh;
     font-size: x-large;
     border-radius: 48%;
     resize: none;
@@ -168,6 +170,7 @@ input:focus{
     cursor: pointer;
     padding: 4px 24px 4px 24px;
     box-shadow: 2px 3px 25px 1px #fffab6af;
+    margin-top: 2vh;
 }
 
 .saveButton:hover{
@@ -196,9 +199,12 @@ input:focus{
     list-style-type: none;
     background-color: #f5f5f5;
     overflow-x: scroll;
+    min-width: 33%;
 }
 
-
+#titleInput{
+    font-style: italic;
+}
 
 
 .todoList > span {
@@ -206,7 +212,6 @@ input:focus{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    overflow-y: scroll;
     max-width: 40vw;
 }
 
@@ -224,7 +229,6 @@ input:focus{
 .todoItem{
     display: flex;
     flex-direction: column;
-    overflow: scroll;
     max-width: 25vw;
     margin: 1.9vh;
     cursor: pointer;

@@ -17,6 +17,7 @@ span, article, footer, time, small {
 
 html{
     background-color: #f5f5f5;
+    overflow: hidden;
 }
 .titles{
     font-size: x-large;

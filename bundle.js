@@ -1036,9 +1036,9 @@ function TodoList(props) {
     }, provided.droppableProps, {
       ref: provided.innerRef
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement((react_addons_css_transition_group__WEBPACK_IMPORTED_MODULE_3___default()), {
-      transitionName: "auto",
-      transitionEnterTimeout: 2000,
-      transitionLeaveTimeout: 500
+      transitionName: "auto" // transitionEnterTimeout={2000}
+      // transitionLeaveTimeout={500}
+
     }, inProgressTodoItems.map(function (todo, index) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_4__.Draggable, {
         key: todo.key,
@@ -1062,9 +1062,9 @@ function TodoList(props) {
     }, provided.droppableProps, {
       ref: provided.innerRef
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement((react_addons_css_transition_group__WEBPACK_IMPORTED_MODULE_3___default()), {
-      transitionName: "autodone",
-      transitionEnterTimeout: 2000,
-      transitionLeaveTimeout: 500
+      transitionName: "autodone" // transitionEnterTimeout={2000}
+      // transitionLeaveTimeout={500}
+
     }, doneTodoItems.map(function (todo, index) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_4__.Draggable, {
         key: todo.key,

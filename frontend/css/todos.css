@@ -382,7 +382,7 @@ input:focus{
     padding: 3%;
     display: flex;
     flex-direction: column;
-    background: rgb(255, 215, 186);
+    background: #6ca3d3b2;
     max-height: 90%;
 }
 

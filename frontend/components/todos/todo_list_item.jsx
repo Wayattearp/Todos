@@ -32,8 +32,8 @@ function TodoListItem(props) {
     return <div className="todoItemContainer">
         <motion.li className="todoItem"
             style={{ 
-                background: `radial-gradient(circle at 70% 30%, whitesmoke, #${randomColor})`,
-                boxShadow: `0px 0px 8px 1px ${'#'+randomColor}`}}
+                background: `radial-gradient(circle at 90% 10%, whitesmoke, #${randomColor})`,
+                boxShadow: `0px 0px 5px 1px ${'#'+randomColor}`}}
             initial={{
                 opacity: 0
             }}
@@ -43,7 +43,7 @@ function TodoListItem(props) {
             onClick={() => handleDetail(!detail)}>
             {title}
         </motion.li>
-        <div>
+        <div >
             {todoView}
         </div>
         <motion.button className={done ? "todoButtonDone" : "todoButtonInProgress"}

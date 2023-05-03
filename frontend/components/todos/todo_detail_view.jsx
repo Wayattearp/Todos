@@ -21,7 +21,8 @@ class TodoDetailView extends React.Component {
     render() {
         const { removeTodo, todo } = this.props;
         return (
-            <div className={this.state.visible ? "todoDetailVisible" : "todoDetailHidden"}>
+            <div className={this.state.visible ? "todoDetailVisible" : "todoDetailHidden"}> 
+            
                 <motion.div className="StepsBackground"
                     initial={{
                         opacity: 0

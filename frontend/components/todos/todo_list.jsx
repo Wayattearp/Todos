@@ -37,7 +37,7 @@ function TodoList(props) {
         <div className="AppContainerWrapper">
             <div className="titles">
                 <h1 className="workingOn">In Progress</h1>
-                <h1 className="accomplished">Accomplished</h1>
+                <h1 className="accomplished">Done</h1>
             </div>
             <div className="appContainer">
                 <DragDropContext onDragEnd={handleOnDragEndInProgress}>
@@ -90,8 +90,8 @@ function TodoList(props) {
                                         )
                                     }
                                     )}
-                                </ReactCSSTransitionGroup>
                                 {provided.placeholder}
+                                </ReactCSSTransitionGroup>
 
                             </ul>
                         )}

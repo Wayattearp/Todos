@@ -892,6 +892,7 @@ var TodoForm = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
         className: "input",
         id: "titleInput",
+        autocomplete: "off",
         placeholder: "Title",
         value: this.state.title,
         onChange: this.update('title'),
@@ -1024,7 +1025,7 @@ function TodoList(props) {
     className: "workingOn"
   }, "In Progress"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
     className: "accomplished"
-  }, "Accomplished")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, "Done")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "appContainer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_4__.DragDropContext, {
     onDragEnd: handleOnDragEndInProgress
@@ -1036,9 +1037,9 @@ function TodoList(props) {
     }, provided.droppableProps, {
       ref: provided.innerRef
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement((react_addons_css_transition_group__WEBPACK_IMPORTED_MODULE_3___default()), {
-      transitionName: "auto" // transitionEnterTimeout={2000}
-      // transitionLeaveTimeout={500}
-
+      transitionName: "auto",
+      transitionEnterTimeout: 2000,
+      transitionLeaveTimeout: 500
     }, inProgressTodoItems.map(function (todo, index) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_4__.Draggable, {
         key: todo.key,
@@ -1062,9 +1063,9 @@ function TodoList(props) {
     }, provided.droppableProps, {
       ref: provided.innerRef
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement((react_addons_css_transition_group__WEBPACK_IMPORTED_MODULE_3___default()), {
-      transitionName: "autodone" // transitionEnterTimeout={2000}
-      // transitionLeaveTimeout={500}
-
+      transitionName: "autodone",
+      transitionEnterTimeout: 2000,
+      transitionLeaveTimeout: 500
     }, doneTodoItems.map(function (todo, index) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_4__.Draggable, {
         key: todo.key,
@@ -1075,7 +1076,7 @@ function TodoList(props) {
           ref: provided.innerRef
         }, provided.draggableProps, provided.dragHandleProps), todo);
       });
-    })), provided.placeholder);
+    }), provided.placeholder));
   })))));
 }
 
@@ -1184,8 +1185,8 @@ function TodoListItem(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.li, {
     className: "todoItem",
     style: {
-      background: "radial-gradient(circle at 70% 30%, whitesmoke, #".concat(randomColor, ")"),
-      boxShadow: "0px 0px 8px 1px ".concat('#' + randomColor)
+      background: "radial-gradient(circle at 90% 10%, whitesmoke, #".concat(randomColor, ")"),
+      boxShadow: "0px 0px 5px 1px ".concat('#' + randomColor)
     },
     initial: {
       opacity: 0

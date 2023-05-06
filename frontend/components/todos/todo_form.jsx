@@ -42,7 +42,7 @@ class TodoForm extends React.Component {
                         <input
                             className="input"
                             id="titleInput"
-                            autocomplete="off"
+                            autoComplete="off"
                             placeholder="Title"  value={this.state.title}
                             onChange={this.update('title')} required />
                     </label>

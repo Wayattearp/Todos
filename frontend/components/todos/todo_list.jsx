@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import TodoListItem from './todo_list_item';
 import TodoForm from './todo_form'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
@@ -9,14 +9,11 @@ function TodoList(props) {
     const inProgressTodoItems = [];
     todos.map((todo) => {
         if (todo.done)
-            doneTodoItems.push(<TodoListItem key={todo.id} todo={todo} receiveTodo={receiveTodo} />);
+            doneTodoItems.unshift(<TodoListItem key={todo.id} todo={todo} receiveTodo={receiveTodo} />);
         else {
-            inProgressTodoItems.push(<TodoListItem key={todo.id} todo={todo} receiveTodo={receiveTodo} />)
+            inProgressTodoItems.unshift(<TodoListItem key={todo.id} todo={todo} receiveTodo={receiveTodo} />)
         }
     });
-
-    const [todosInProgress, updateTodosInProgress] = useState(inProgressTodoItems);
-    const [todosDone, updateDoneTodoItems] = useState(doneTodoItems);
 
     return <div>
         <div className="AppContainerWrapper">

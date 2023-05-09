@@ -819,16 +819,16 @@ function TodoList(props) {
     className: "todoList"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement((react_addons_css_transition_group__WEBPACK_IMPORTED_MODULE_3___default()), {
     transitionName: "auto",
-    transitionEnterTimeout: 2000,
-    transitionLeaveTimeout: 500
+    transitionEnterTimeout: 1000,
+    transitionLeaveTimeout: 1
   }, inProgressTodoItems)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_todo_form__WEBPACK_IMPORTED_MODULE_2__["default"], {
     receiveTodo: receiveTodo
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
     className: "todoList"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement((react_addons_css_transition_group__WEBPACK_IMPORTED_MODULE_3___default()), {
     transitionName: "autodone",
-    transitionEnterTimeout: 2000,
-    transitionLeaveTimeout: 500
+    transitionEnterTimeout: 1000,
+    transitionLeaveTimeout: 1
   }, doneTodoItems)))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TodoList);

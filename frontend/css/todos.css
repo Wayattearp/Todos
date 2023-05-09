@@ -192,7 +192,7 @@ input:focus{
 .appContainer{
     display: flex;
     flex-direction: row;
-    padding: 0vh 2vw 1vh 2vw;
+    padding: 1vw;
 }
 
 
@@ -227,6 +227,7 @@ input:focus{
     display: flex;
     flex-direction: column;
     opacity: 0.75;
+    z-index: 2;
 } 
 
 .todoItemContainer:hover{
@@ -251,7 +252,6 @@ input:focus{
 .todoItem:hover{
     transition: 0.3s;
     transform: scale(1.1);
-    z-index: 3;
 }
 
 
@@ -329,10 +329,10 @@ input:focus{
 .auto-enter.auto-enter-active {
     opacity: 1;
     transform: translateX(0);
-    transition: opacity 5000ms, transform 2000ms;
+    transition: opacity 1000ms, transform 1000ms;
 }
 
-.auto-leave {
+/* .auto-leave {
     opacity: 1;
     transform: translateX(0);
 }
@@ -342,7 +342,7 @@ input:focus{
     transform: translateX(-300%);
     transition: opacity 1000ms, transform 2000ms;
 }
-
+ */
 
 .autodone-enter {
     opacity: 0.01;
@@ -352,10 +352,10 @@ input:focus{
 .autodone-enter.autodone-enter-active {
     opacity: 1;
     transform: translateX(0);
-    transition: opacity 5000ms, transform 2000ms;
+    transition: opacity 1000ms, transform 1000ms;
 }
 
-.autodone-leave {
+/* .autodone-leave {
     opacity: 1;
     transform: translateX(0);
 }
@@ -364,7 +364,7 @@ input:focus{
     opacity: 0.01;
     transform: translateX(300%);
     transition: opacity 1000ms, transform 2000ms;
-}
+} */
 
 /* STEPS  */
 
@@ -399,7 +399,7 @@ input:focus{
   right: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.7);
-  z-index: 51;
+  /* z-index: 51; */
 }
 
 .todoDetailVisible{

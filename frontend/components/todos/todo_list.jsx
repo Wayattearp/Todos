@@ -26,7 +26,7 @@ function TodoList(props) {
                     <ReactCSSTransitionGroup
                         transitionName='auto'
                         transitionEnterTimeout={1000}
-                        transitionLeaveTimeout={1}>
+                        transitionLeaveTimeout={1000}>
                         {inProgressTodoItems}
                     </ReactCSSTransitionGroup>
                 </ul>
@@ -35,7 +35,7 @@ function TodoList(props) {
                     <ReactCSSTransitionGroup
                         transitionName='autodone'
                         transitionEnterTimeout={1000}
-                        transitionLeaveTimeout={1}>
+                        transitionLeaveTimeout={1000}>
                         {doneTodoItems}
                     </ReactCSSTransitionGroup>
                 </ul>

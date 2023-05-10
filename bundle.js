@@ -806,7 +806,7 @@ function TodoList(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement((react_addons_css_transition_group__WEBPACK_IMPORTED_MODULE_3___default()), {
     transitionName: "auto",
     transitionEnterTimeout: 1000,
-    transitionLeaveTimeout: 1
+    transitionLeaveTimeout: 1000
   }, inProgressTodoItems)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_todo_form__WEBPACK_IMPORTED_MODULE_2__["default"], {
     receiveTodo: receiveTodo
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
@@ -814,7 +814,7 @@ function TodoList(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement((react_addons_css_transition_group__WEBPACK_IMPORTED_MODULE_3___default()), {
     transitionName: "autodone",
     transitionEnterTimeout: 1000,
-    transitionLeaveTimeout: 1
+    transitionLeaveTimeout: 1000
   }, doneTodoItems)))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TodoList);

@@ -63,7 +63,7 @@ h1{
 .todoTitleBox{
     display: flex;
     justify-content: center;
-    animation: titlebox-anim 10s ease-out infinite;
+    /* animation: titlebox-anim 10s ease-out infinite; */
     transition: 0.5s;
     font-weight: 700;
     font-size: xx-large;
@@ -97,7 +97,7 @@ h1{
 }
 
 .textArea{
-    animation: textarea-anim 10s ease-out infinite;
+    /* animation: textarea-anim 10s ease-out infinite; */
     display: flex;
     text-align: center;
     justify-content: center;
@@ -226,13 +226,9 @@ input:focus{
 .todoItemContainer{
     display: flex;
     flex-direction: column;
-    opacity: 0.75;
     z-index: 2;
 } 
 
-.todoItemContainer:hover{
-    opacity: 1;
-}
 
 .todoItem{
     display: flex;
@@ -322,12 +318,12 @@ input:focus{
 }
 
 .auto-enter {
-    opacity: 0.01;
+    /* opacity: 0.01; */
     transform: translateX(-300%);
 }
 
 .auto-enter.auto-enter-active {
-    opacity: 1;
+    /* opacity: 1; */
     transform: translateX(0);
     transition: opacity 1000ms, transform 1000ms;
 }
@@ -345,12 +341,12 @@ input:focus{
  */
 
 .autodone-enter {
-    opacity: 0.01;
+    /* opacity: 0.01; */
     transform: translateX(300%);
 }
 
 .autodone-enter.autodone-enter-active {
-    opacity: 1;
+    /* opacity: 1; */
     transform: translateX(0);
     transition: opacity 1000ms, transform 1000ms;
 }
@@ -388,8 +384,9 @@ input:focus{
     padding: 3%;
     display: flex;
     flex-direction: column;
-    background: #6ca3d3b2;
+    background: #6ca3d3;
     max-height: 90%;
+    z-index: 100;
 }
 
 .StepsBackground {
@@ -399,7 +396,7 @@ input:focus{
   right: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.7);
-  /* z-index: 51; */
+  z-index: 51;
 }
 
 .todoDetailVisible{
@@ -415,12 +412,11 @@ input:focus{
     font-size: 40px;
     background: transparent;
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 1px;
+    right: 10px;
 }
 
 .closeStepsButton:hover{
-    opacity: 80%;
     color: whitesmoke;
 }
 

@@ -357,7 +357,7 @@ input:focus{
 .autodone-leave.autodone-leave-active {
     opacity: 0.01;
     transform: translateX(300%);
-    transition: opacity 1000ms, transform 2000ms;
+    transition: opacity 1000ms, transform 1000ms;
 }
 
 /* STEPS  */

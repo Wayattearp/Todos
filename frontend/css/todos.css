@@ -323,7 +323,7 @@ input:focus{
 .auto-enter.auto-enter-active {
     /* opacity: 1; */
     transform: translateX(0);
-    transition: opacity 1000ms, transform 2000ms;
+    transition: opacity 1000ms, transform 1000ms;
 }
 
 .auto-leave {
@@ -334,7 +334,7 @@ input:focus{
 .auto-leave.auto-leave-active {
     opacity: 0.01;
     transform: translateX(-300%);
-    transition: opacity 1000ms, transform 2000ms;
+    transition: transform 1000ms;
 }
 
 
@@ -357,7 +357,7 @@ input:focus{
 .autodone-leave.autodone-leave-active {
     opacity: 0.01;
     transform: translateX(300%);
-    transition: opacity 1000ms, transform 1000ms;
+    transition: transform 1000ms;
 }
 
 /* STEPS  */

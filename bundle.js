@@ -727,7 +727,7 @@ var TodoForm = /*#__PURE__*/function (_React$Component) {
         className: "todoBodyBox"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", {
         className: "textArea",
-        placeholder: "If you can think it, you can do it",
+        placeholder: "If you can envision it, you can do it",
         value: this.state.body,
         onChange: this.update('body'),
         cols: "30",
@@ -891,26 +891,19 @@ function TodoListItem(props) {
     _useState2 = _slicedToArray(_useState, 2),
     detail = _useState2[0],
     handleDetail = _useState2[1];
-  var colors = ['adeecf', 'fae1dd', 'fdffb6', 'a9d6e5', 'fde2e4', 'e9edc9'];
-  var randomColor = colors[Math.floor(Math.random() * 6)];
   var todo = props.todo;
   var title = todo.title,
     done = todo.done;
   var todoView;
   if (detail) {
     todoView = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_todo_detail_view_container__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      todo: todo,
-      color: randomColor
+      todo: todo
     });
   }
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "todoItemContainer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.li, {
     className: "todoItem",
-    style: {
-      background: "radial-gradient(circle at 90% 10%, whitesmoke, #".concat(randomColor, ")"),
-      boxShadow: "0px 0px 5px 1px ".concat('#' + randomColor)
-    },
     initial: {
       opacity: 0
     },

@@ -234,20 +234,14 @@ input:focus{
     max-width: 25vw;
     margin: 1.9vh;
     cursor: pointer;
-    padding: 2vh;
+    padding: 3vh;
     border-radius: 99px;
     font-size: xx-large;
     text-align: center;
     font-family: 'Amatic SC', cursive;
+    box-shadow: 2px 4px 15px 0px rgb(235 235 229);
+    background: radial-gradient(circle at 70% 30%, white, rgb(232, 247, 251));
 }
-
-
-
-.todoItem:hover{
-    transition: 0.3s;
-    transform: scale(1.1);
-}
-
 
 
 .todoButtonDone{

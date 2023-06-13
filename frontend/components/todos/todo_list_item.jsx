@@ -17,23 +17,17 @@ function TodoListItem(props) {
 
     const [detail, handleDetail] = useState(false);
 
-    let colors = [ 'adeecf', 'fae1dd', 'fdffb6', 'a9d6e5', 'fde2e4', 'e9edc9'];
-    let randomColor = colors[Math.floor(Math.random() * 6)];
-
     const todo = props.todo;
     const { title, done } = todo;
 
     let todoView;
 
     if (detail) {
-        todoView = <TodoDetailViewContainer todo={todo} color={randomColor} />
+        todoView = <TodoDetailViewContainer todo={todo} />
     }
 
     return <div className="todoItemContainer">
         <motion.li className="todoItem"
-            style={{ 
-                background: `radial-gradient(circle at 90% 10%, whitesmoke, #${randomColor})`,
-                boxShadow: `0px 0px 5px 1px ${'#'+randomColor}`}}
             initial={{
                 opacity: 0
             }}

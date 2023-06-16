@@ -145,6 +145,7 @@ h1{
 
 .input{
     text-align: center;
+    max-width: inherit;
     padding: 1%;
     font-size: x-large;
     border-radius: 30px;
@@ -538,6 +539,7 @@ input:focus{
     margin: -20px;
     margin-top: -50px;
     transition: 2s;
+    z-index: 1;
 }
 
 .giphyEmbed:hover{

@@ -521,18 +521,16 @@ input:focus {
 
 .stepItem {
     position: relative;
-    /* Add position property for positioning */
     font-size: x-large;
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
     background: white;
-    min-width: 240px;
-    min-height: 240px;
+    min-width: 200px;
+    min-height: 200px;
     max-width: 100%;
-    /* Limit the maximum width to fit within the container */
     overflow-x: auto;
-    /* Enable horizontal scrolling if necessary */
+    white-space: nowrap;
 }
 
 .stepItemContainer {

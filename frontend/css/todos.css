@@ -381,6 +381,7 @@ input:focus {
 }
 
 .giphyEmbed{
+    transition: 2s;
     cursor: pointer;
 }
 

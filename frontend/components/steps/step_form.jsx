@@ -43,7 +43,7 @@ class StepForm extends React.Component {
                         className='inputStep'
                         placeholder="Details..."
                         value={this.state.body}
-                        onChange={this.update('body')} cols='40' rows='5' required />
+                        onChange={this.update('body')} cols='40' rows='4' required />
                 </label>
                 <button 
                 className="saveStepButton"

@@ -272,7 +272,7 @@ var StepForm = /*#__PURE__*/function (_React$Component) {
         value: this.state.body,
         onChange: this.update('body'),
         cols: "40",
-        rows: "5",
+        rows: "4",
         required: true
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
         className: "saveStepButton",

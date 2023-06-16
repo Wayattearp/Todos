@@ -63,7 +63,7 @@ h1{
 .todoTitleBox{
     display: flex;
     justify-content: center;
-    max-width: 30vw;
+    max-width: 25vw;
     animation: titlebox-anim 10s ease-out infinite;
     transition: 0.5s;
     font-weight: 700;

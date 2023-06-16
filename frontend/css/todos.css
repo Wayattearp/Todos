@@ -380,6 +380,10 @@ input:focus {
     display: none;
 }
 
+.giphyEmbed{
+    cursor: pointer;
+}
+
 .giphyEmbed:hover {
     transition: 2s;
     transform: scale(1.1);

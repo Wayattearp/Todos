@@ -43,11 +43,12 @@ class StepForm extends React.Component {
                         className='inputStep'
                         placeholder="Details..."
                         value={this.state.body}
-                        onChange={this.update('body')} cols='40' rows='4' required />
+                        onChange={this.update('body')} cols='40' rows='6' required />
                 </label>
                 <button 
                 className="saveStepButton"
                 onClick={this.handleSave}> Add Step </button>
+                
             </form>
         )
     }

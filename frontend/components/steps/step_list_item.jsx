@@ -38,6 +38,7 @@ class StepListItem extends React.Component {
                     <div className="stepBody">
                         {body}
                     </div>
+                    
                     <button className="deleteStep"
                         onClick={this.props.removeStep}>
                         Delete

@@ -272,7 +272,7 @@ var StepForm = /*#__PURE__*/function (_React$Component) {
         value: this.state.body,
         onChange: this.update('body'),
         cols: "40",
-        rows: "4",
+        rows: "6",
         required: true
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
         className: "saveStepButton",
@@ -578,19 +578,13 @@ var TodoDetailView = /*#__PURE__*/function (_React$Component) {
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_steps_step_list_container__WEBPACK_IMPORTED_MODULE_1__["default"], {
         todo_id: todo.id
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.button, {
-        className: "deleteTodoButton",
-        initial: {
-          scale: 0
-        },
-        animate: {
-          scale: 1,
-          transition: {
-            duration: 0.8
-          }
-        },
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        "class": "deleteStepMain",
+        title: "Delete Step"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        "class": "fas fa-trash",
         onClick: removeTodo
-      }, "Delete Todo"))));
+      })))));
     }
   }]);
   return TodoDetailView;

@@ -21,8 +21,8 @@ class TodoDetailView extends React.Component {
     render() {
         const { removeTodo, todo } = this.props;
         return (
-            <div className={this.state.visible ? "todoDetailVisible" : "todoDetailHidden"}> 
-            
+            <div className={this.state.visible ? "todoDetailVisible" : "todoDetailHidden"}>
+
                 <motion.div className="StepsBackground"
                     initial={{
                         opacity: 0
@@ -66,18 +66,11 @@ class TodoDetailView extends React.Component {
                             <StepListContainer
                                 todo_id={todo.id} />
                         </motion.div>
-                        <motion.button className="deleteTodoButton"
-                            initial={{
-                                scale: 0
-                            }}
-                            animate={{
-                                scale: 1,
-                                transition: {
-                                    duration: 0.8
-                                }
-                            }}
-                            onClick={removeTodo}>Delete Todo</motion.button>
-
+                        <div class="deleteStepMain" title="Delete Step">
+                            <span class="fas fa-trash"
+                                onClick={removeTodo}>
+                            </span>
+                        </div>
                     </motion.div>
                 </motion.div>
             </div>

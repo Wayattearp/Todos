@@ -20,7 +20,7 @@ html{
     overflow: hidden;
 }
 .titles{
-    font-size: xx-large;
+    font-size: x-large;
     padding-top: 2vh;
     display: flex;
     justify-content: space-evenly;
@@ -63,6 +63,7 @@ h1{
 .todoTitleBox{
     display: flex;
     justify-content: center;
+    max-width: 30vw;
     animation: titlebox-anim 10s ease-out infinite;
     transition: 0.5s;
     font-weight: 700;

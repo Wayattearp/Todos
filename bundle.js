@@ -730,7 +730,7 @@ var TodoForm = /*#__PURE__*/function (_React$Component) {
         placeholder: "If you can envision it, you can do it",
         value: this.state.body,
         onChange: this.update('body'),
-        cols: "30",
+        cols: "25",
         rows: "5",
         required: true
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {

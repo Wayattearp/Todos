@@ -51,7 +51,7 @@ class TodoForm extends React.Component {
                         <textarea
                             className="textArea"
                             placeholder="If you can envision it, you can do it" value={this.state.body}
-                            onChange={this.update('body')} cols='30' rows='5' required />
+                            onChange={this.update('body')} cols='25' rows='5' required />
                     </label>
                     <img onClick={this.handleThinkingGuySave} src="https://acegif.com/wp-content/gif/thinking-emoji-1.gif" width="200px" height="200px" frameBorder="0" className="giphyEmbed" allowFullScreen></img>
                     <button

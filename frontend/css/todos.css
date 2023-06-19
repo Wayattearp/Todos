@@ -315,7 +315,7 @@ input:focus {
     text-align: center;
     max-height: 10%;
     background: #90e0ff;
-    padding: 2%;
+    padding: 1vh;
     font-size: xx-large;
 }
 
@@ -521,10 +521,11 @@ input:focus {
     text-align: center;
     background: white;
     min-width: 200px;
-    min-height: 24vh;
+    min-height: 30vh;
     max-width: 100%;
     overflow-x: auto;
     white-space: nowrap;
+    cursor: default;
 }
 
 .stepItemContainer {
@@ -532,7 +533,6 @@ input:focus {
     /* Distribute width equally for 3 items in a row */
     margin: 1%;
     min-width: 282px;
-    min-height: 268px;
     max-width: 32%;
     /* Limit the maximum width based on the number of items in a row */
 }
@@ -584,6 +584,7 @@ input:focus {
     overflow: auto;
     padding: 1vh 1vw 0vh 1vw;
     border-radius: 10px;
+    cursor: default;
 }
 
 .stepBody {

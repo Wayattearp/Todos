@@ -274,6 +274,7 @@ input:focus {
     font-family: 'Amatic SC', cursive;
     box-shadow: 2px 4px 15px 0px rgb(235 235 229);
     background: radial-gradient(circle at 70% 30%, white, rgb(232, 247, 251));
+    overflow: auto;
 }
 
 
@@ -317,6 +318,7 @@ input:focus {
     background: #90e0ff;
     padding: 1vh;
     font-size: xx-large;
+    overflow: auto;
 }
 
 

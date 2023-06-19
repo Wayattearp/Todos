@@ -68,17 +68,11 @@ h1 {
 }
 
 .accomplished {
-    /* position: absolute;
-    top: 2vh;
-    right: 10vw; */
     margin-left: 20vw;
     color: rgba(18, 105, 18, 0.904);
 }
 
 .workingOn {
-    /* position: absolute;
-    top: 2vh;
-    left: 10vw; */
     margin-right: 20vw;
     color: rgb(245 189 6 / 78%);
 }
@@ -380,7 +374,7 @@ input:focus {
     display: none;
 }
 
-.giphyEmbed{
+.giphyEmbed {
     transition: 2s;
     cursor: pointer;
 }
@@ -521,13 +515,13 @@ input:focus {
 
 .stepItem {
     position: relative;
-    font-size: x-large;
-    border-radius: 8px;
+    font-size: large;
+    border-radius: 2vh;
     overflow: hidden;
     text-align: center;
     background: white;
     min-width: 200px;
-    min-height: 200px;
+    min-height: 24vh;
     max-width: 100%;
     overflow-x: auto;
     white-space: nowrap;
@@ -542,6 +536,7 @@ input:focus {
     max-width: 32%;
     /* Limit the maximum width based on the number of items in a row */
 }
+
 .stepsContainer {
     overflow-x: auto;
     /* Enable horizontal scrolling */
@@ -583,12 +578,16 @@ input:focus {
 }
 
 .stepTitle {
-    margin: 3%;
-    background-color: rgb(198 242 254);
+    margin: 1vh;
+    background-color: #90e0ff78;
+    font-weight: 600;
+    overflow: auto;
+    padding: 1vh 1vw 0vh 1vw;
+    border-radius: 10px;
 }
 
 .stepBody {
-     margin: 5%;
+    margin: 5%;
 }
 
 .deleteStep {
@@ -637,7 +636,7 @@ input:focus {
     }
 
     .closeStepsButton {
-        font-size: 3vw;
+        font-size: 2vh;
     }
 
     .inputStep {
@@ -670,6 +669,6 @@ input:focus {
     .stepStatus {
         border-radius: 4vw;
         margin-top: 5%;
-        font-size: 3vw;
+        font-size: 2vw;
     }
 }

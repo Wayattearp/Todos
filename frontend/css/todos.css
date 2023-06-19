@@ -464,10 +464,9 @@ input:focus {
     background-color: white;
     position: relative;
     width: 100%;
-    /* Set the input width to 100% */
+    max-height: 17vh;
     box-sizing: border-box;
     resize: none;
-    /* Include padding and border in the width calculation */
 }
 
 .textAreaStep {
@@ -639,7 +638,7 @@ input:focus {
     }
 
     .closeStepsButton {
-        font-size: 2vh;
+        font-size: 3vw;
     }
 
     .inputStep {
@@ -649,6 +648,7 @@ input:focus {
         font-size: 4vw;
         border-radius: 4vw;
         resize: none;
+        max-height: 17vh;
     }
 
     .textAreaStep {

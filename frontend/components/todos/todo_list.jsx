@@ -9,9 +9,9 @@ function TodoList(props) {
     const inProgressTodoItems = [];
     todos.map((todo) => {
         if (todo.done)
-            doneTodoItems.unshift(<TodoListItem key={todo.id} todo={todo} receiveTodo={receiveTodo} />);
+            doneTodoItems.push(<TodoListItem key={todo.id} todo={todo} receiveTodo={receiveTodo} />);
         else {
-            inProgressTodoItems.unshift(<TodoListItem key={todo.id} todo={todo} receiveTodo={receiveTodo} />)
+            inProgressTodoItems.push(<TodoListItem key={todo.id} todo={todo} receiveTodo={receiveTodo} />)
         }
     });
 

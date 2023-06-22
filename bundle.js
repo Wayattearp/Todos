@@ -773,12 +773,12 @@ function TodoList(props) {
   var doneTodoItems = [];
   var inProgressTodoItems = [];
   todos.map(function (todo) {
-    if (todo.done) doneTodoItems.unshift( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_todo_list_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    if (todo.done) doneTodoItems.push( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_todo_list_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
       key: todo.id,
       todo: todo,
       receiveTodo: receiveTodo
     }));else {
-      inProgressTodoItems.unshift( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_todo_list_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      inProgressTodoItems.push( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_todo_list_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
         key: todo.id,
         todo: todo,
         receiveTodo: receiveTodo
